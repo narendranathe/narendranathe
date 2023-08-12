@@ -1,9 +1,13 @@
 <h1 align="center">Hi 👋, I'm Narendranath Edara</h1>
 <h3 align="center">A passionate Business Analyst in USA</h3>
 
-- 💬 Ask me about **SQL, Excel,**
+- 👨‍💻 All of my projects are available at [narendranathe](narendranathe)
+
+- 💬 Ask me about **SQL, Excel, Power BI, Tableau**
 
 - 📫 How to reach me **n.edara@mst.edu**
+
+- ⚡ Fun fact **All time favorite movie is Batman**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
