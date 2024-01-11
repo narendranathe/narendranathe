@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Narendranath Edara</h1>
-<h3 align="center">A passionate Business Analyst in USA</h3>
+<h3 align="center">A passionate Product Owner in USA</h3>
 
 - 👨‍💻 All of my projects are available at [narendranathe](narendranathe)
 
