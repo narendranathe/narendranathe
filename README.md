@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Narendranath Edara</h1>
 <h3 align="center">A passionate Product Owner in USA</h3>
 
-- 👨‍💻 All of my projects are available at [narendranathe](narendranathe)
+- 👨‍💻 All of my projects are available at ([narendranathe](https://github.com/narendranathe?tab=repositories))
 
 - 💬 Ask me about **SQL, Excel, Power BI, Tableau**
 
