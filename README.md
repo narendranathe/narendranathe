@@ -5,7 +5,7 @@
 
 - 💬 Ask me about **SQL, Excel, Power BI, Tableau**
 
-- 📫 How to reach me **n.edara@mst.edu**
+- 📫 How to reach me **edara.narendranath@gmail.com**
 
 - ⚡ Fun fact **All time favorite movie is Batman**
 
