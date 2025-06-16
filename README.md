@@ -1,9 +1,9 @@
 <h1 align="center">Hi 👋, I'm Narendranath Edara</h1>
-<h3 align="center">A passionate Analyst in USA</h3>
+<h3 align="center">A passionate Data Engineer in USA</h3>
 
 - 👨‍💻 All of my projects are available at ([narendranathe](https://github.com/narendranathe?tab=repositories))
 
-- 💬 Ask me about **SQL, Excel, Power BI, Tableau**
+- 💬 Ask me about **Python, SQL, ETL, Azure cloud, Git, Excel, Power BI, Tableau**
 
 - 📫 How to reach me **edara.narendranath@gmail.com**
 
