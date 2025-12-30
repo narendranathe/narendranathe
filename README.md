@@ -37,7 +37,7 @@ Published researcher in **NLP and Sentiment Analysis**, applying AI to extract a
 ### Data Engineering & ETL
 <p align="left">
   <a href="https://docs.microsoft.com/en-us/sql/integration-services/" target="_blank" rel="noreferrer">
-    <img src="https://www.sqlservercentral.com/wp-content/uploads/legacy/8755f69180b7ac7ee76a69ae68ec36872a116ad4/24622.png" alt="SSIS" width="80" height="80"/>
+    <img src="https://img.icons8.com/color/480/microsoft-sql-server.png" alt="SSIS" width="80" height="80"/>
   </a>
   <a href="https://spark.apache.org/" target="_blank" rel="noreferrer">
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" alt="Apache Spark" width="80" height="80"/>
@@ -46,7 +46,7 @@ Published researcher in **NLP and Sentiment Analysis**, applying AI to extract a
     <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/AirflowLogo.png" alt="Airflow" width="80" height="80"/>
   </a>
   <a href="https://kafka.apache.org/" target="_blank" rel="noreferrer">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Apache_kafka.svg" alt="Kafka" width="80" height="80"/>
+    <img src="https://cdn.worldvectorlogo.com/logos/kafka.svg" alt="Kafka" width="60" height="60"/>
   </a>
   <a href="https://www.databricks.com/" target="_blank" rel="noreferrer">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Databricks_Logo.png" alt="Databricks" width="80" height="80"/>
@@ -62,10 +62,10 @@ Published researcher in **NLP and Sentiment Analysis**, applying AI to extract a
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg" alt="Azure" width="80" height="80"/>
   </a>
   <a href="https://learn.microsoft.com/en-us/fabric/" target="_blank" rel="noreferrer">
-    <img src="https://miro.medium.com/v2/resize:fit:1400/1*gxMT5RBdWmMILCOLkr5vGQ.png" alt="Microsoft Fabric" width="80" height="80"/>
+    <img src="https://github.com/microsoft/fabric-samples/raw/main/docs-samples/data-engineering/Images/fabric-logo.png" alt="Microsoft Fabric" width="80" height="80"/>
   </a>
   <a href="https://azure.microsoft.com/en-us/products/cosmos-db" target="_blank" rel="noreferrer">
-    <img src="https://symbols.getvecta.com/stencil_25/2_azure-cosmos-db.54b13ced29.svg" alt="Azure Cosmos DB" width="80" height="80"/>
+    <img src="./assets/cosmos-db-icon.svg" alt="Azure Cosmos DB" width="80" height="80"/>
   </a>
   <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL" width="80" height="80"/>
@@ -131,7 +131,7 @@ Published researcher in **NLP and Sentiment Analysis**, applying AI to extract a
 ## 📫 Let's Connect
 
 - 💼 **LinkedIn**: [linkedin.com/in/narendranathe](https://linkedin.com/in/narendranathe)
-- 📧 **Email**: edara.narendranath@gmail.com
+- 📧 **Email**: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fe9b9a9f8c9fd0909f8c9b909a8c9f909f8a96be99939f9792d09d9193">[email&#160;protected]</a>
 - 🐙 **GitHub**: [github.com/narendranathe](https://github.com/narendranathe?tab=repositories)
 - 💬 **Ask me about**: Python, SQL, ETL/ELT, Azure Cloud, Spark, Power BI, Data Architecture, AI Automation
 
@@ -148,10 +148,4 @@ Published researcher in **NLP and Sentiment Analysis**, applying AI to extract a
 
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=narendranathe&show_icons=true&locale=en&layout=compact" alt="narendranathe" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=narendranathe&" alt="narendranathe" /></p>
-
----
-
-<p align="center">
-  <i>"Building scalable data systems that power intelligent decisions and AI innovation."</i>
-</p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=narendranathe&" alt="narendranathe"
