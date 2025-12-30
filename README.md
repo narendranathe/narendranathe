@@ -146,6 +146,11 @@ Published researcher in **NLP and Sentiment Analysis**, applying AI to extract a
 
 ---
 
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=narendranathe&show_icons=true&locale=en&layout=compact" alt="narendranathe" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=narendranathe&" alt="narendranathe"
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=narendranathe&" alt="narendranathe" /></p>
+
+---
+
+<p align="center">
+  <i>"Building scalable data systems that power intelligent decisions and AI innovation."</i>
+</p>
