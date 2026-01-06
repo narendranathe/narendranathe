@@ -131,7 +131,7 @@ Published researcher in **NLP and Sentiment Analysis**, applying AI to extract a
 ##  Let's Connect
 
 -  **LinkedIn**: [linkedin.com/in/narendranathe](https://linkedin.com/in/narendranathe)
--  **Email**: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fe9b9a9f8c9fd0909f8c9b909a8c9f909f8a96be99939f9792d09d9193">[email&#160;protected]</a>
+- <a href="javascript:void(0)" onclick="window.location.href='mailto:' + 'edara.narendranath' + '@' + 'gmail.com'">**Email**:</a>
 -  **GitHub**: [github.com/narendranathe](https://github.com/narendranathe?tab=repositories)
 -  **Ask me about**: Python, SQL, ETL/ELT, Azure Cloud, Spark, Power BI, Data Architecture, AI Automation
 
