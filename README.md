@@ -113,36 +113,36 @@ Published researcher in **NLP and Sentiment Analysis**, applying AI to extract a
 
 ---
 
-## 💼 Professional Focus
+##  Professional Focus
 
-🎯 **Current Role**: Data Engineer | SQL Developer at **ExponentHR**
-- Designing full SDLC for scalable HR data solutions
-- Building CI/CD pipelines with Azure DevOps (45% reduction in release cycles)
+ **Current Role**: Data Engineer | Data Engineer at **ExponentHR**
+- Designing full SDLC for scalable Reporting and Analytics data platforms
+- Building CI/CD pipelines with Azure DevOps (reducing release cycles time from 3 months to 14 days)
 - Optimizing ETL processes with SSIS and CDC (35% improvement in real-time syncing)
 - Performance tuning SQL Server for enterprise-scale applications
 
-📚 **Learning Journey**: 
+ **Learning Journey**: 
 - Advancing Python proficiency for production-level data engineering
 - Exploring cutting-edge AI/ML integrations in data pipelines
 - Building innovative projects that push industry boundaries
 
 ---
 
-## 📫 Let's Connect
+##  Let's Connect
 
-- 💼 **LinkedIn**: [linkedin.com/in/narendranathe](https://linkedin.com/in/narendranathe)
-- 📧 **Email**: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fe9b9a9f8c9fd0909f8c9b909a8c9f909f8a96be99939f9792d09d9193">[email&#160;protected]</a>
-- 🐙 **GitHub**: [github.com/narendranathe](https://github.com/narendranathe?tab=repositories)
-- 💬 **Ask me about**: Python, SQL, ETL/ELT, Azure Cloud, Spark, Power BI, Data Architecture, AI Automation
+-  **LinkedIn**: [linkedin.com/in/narendranathe](https://linkedin.com/in/narendranathe)
+-  **Email**: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fe9b9a9f8c9fd0909f8c9b909a8c9f909f8a96be99939f9792d09d9193">[email&#160;protected]</a>
+-  **GitHub**: [github.com/narendranathe](https://github.com/narendranathe?tab=repositories)
+-  **Ask me about**: Python, SQL, ETL/ELT, Azure Cloud, Spark, Power BI, Data Architecture, AI Automation
 
 ---
 
-## ⚡ Fun Facts
+##  Fun Facts
 
-- 🦇 All-time favorite movie: **Batman**
-- 🎓 Master's in Information Science & Technology (Missouri S&T)
-- 🏆 Published research on NLP & Sentiment Analysis for visitor insights
-- 🌟 Passionate about building **high-achieving, market-disrupting projects**
+-  All-time favorite movie: **Batman Dark Knight**
+-  Master's in Information Science & Technology (Missouri S&T)
+-  Published research on NLP & Sentiment Analysis for visitor insights 
+-  Passionate about building **high-achieving, market-disrupting projects**
 
 ---
 
