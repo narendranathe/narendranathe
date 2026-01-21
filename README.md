@@ -7,7 +7,7 @@
 
 ##  About Me
 
-I'm a **Data Engineer** passionate about architecting next-generation analytics platforms and AI-powered data solutions that don't just process data—they democratize it. My mission is to build production-grade systems that make sophisticated data accessible to everyone, from technical teams to business stakeholders.
+I'm a **Data Engineer** passionate about architecting next-generation analytics platforms and AI-powered data solutions that don't just process data, they democratize it. My mission is to build production-grade systems that make sophisticated data accessible to everyone, from technical teams to business stakeholders.
 
 With a **Master's in Information Science & Technology** from Missouri University of Science and Technology, I've evolved from database optimization to full-stack data engineering, specializing in **Azure cloud ecosystems**, **real-time data pipelines**, and **AI automation**. My work spans from enterprise-scale ETL orchestration to embedded analytics solutions that deliver intelligence directly where decisions are made.
 
