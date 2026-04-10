@@ -4,11 +4,33 @@
 
 Building production LLM systems, retrieval pipelines, governed analytics platforms, and developer tooling. I design and ship AI systems that are meant to run in production, not stay as demos.
 
-**Open to:** Senior AI Platform Engineer, Applied AI Engineer, Backend Engineer, AI, ML Platform Engineer  
+<p align="left">
+  <img src="https://komarev.com/ghpvc/?username=narendranathe&label=Profile%20views&color=0e75b6&style=flat" alt="narendranathe profile views" />
+</p>
+
+**Focus:** AI Platform Engineering, Applied AI Systems, Backend AI, ML Infrastructure  
 **Location:** Dallas, TX | Hybrid / Relocation  
 **Links:** [Portfolio](https://narendranathe.github.io) | [LinkedIn](https://linkedin.com/in/narendranathe) | [Email](mailto:edara.narendranath@gmail.com)
 
 ---
+
+## Signal Snapshot
+
+- **400 enterprise clients** served by the ExponentHR NL-to-SQL platform
+- **6K+ catalog columns** mapped across governed HR analytics domains
+- **67% ETL compute reduction** from CDC and pipeline redesign
+- **3 months -> 14 days** release-cycle compression through delivery-system refactors
+- **11 ATS adapters + 6 LLM providers** in AutoApply AI
+- **190 tests** in the extracted `tailor-resume` core
+
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=narendranathe&show_icons=true&hide_border=true&rank_icon=github&include_all_commits=true" alt="Narendranath GitHub stats" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=narendranathe&layout=compact&hide_border=true&langs_count=8" alt="Top languages" />
+</p>
+
+<p align="center">
+  <img height="170" src="https://streak-stats.demolab.com?user=narendranathe&hide_border=true" alt="Narendranath contribution streak" />
+</p>
 
 ## What I Build
 
@@ -45,9 +67,9 @@ At **ExponentHR**, I build enterprise data and AI systems for HR and payroll ana
 - Reworked CDC-driven ETL from heavy reload patterns to incremental pipelines, cutting compute cost by **67%**
 - Support production systems where failure is business-critical and reliability matters as much as feature velocity
 
-## Best-Fit Roles
+## Where I Add The Most Value
 
-If you are hiring for work like this, we will probably have a productive conversation:
+The work I fit best is:
 
 - AI platform engineering
 - Applied AI systems
