@@ -79,11 +79,12 @@ Outside work, I ship applied AI products across FastAPI, TypeScript, PostgreSQL,
   <img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" alt="Kafka" />
   <img src="https://img.shields.io/badge/Apache%20Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" alt="Apache Spark" />
   <img src="https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="Azure" />
-  <img src="https://img.shields.io/badge/Microsoft%20Fabric-5B2EFF?style=flat-square" alt="Microsoft Fabric" />
-  <img src="https://img.shields.io/badge/FAISS-2D5A4A?style=flat-square" alt="FAISS" />
-  <img src="https://img.shields.io/badge/pgvector-0F766E?style=flat-square" alt="pgvector" />
-  <img src="https://img.shields.io/badge/RAG-7C3AED?style=flat-square" alt="RAG" />
-  <img src="https://img.shields.io/badge/MCP-111111?style=flat-square" alt="MCP" />
+  <img src="assets/badges/microsoft-fabric.svg" alt="Microsoft Fabric" />
+  <img src="assets/badges/faiss.svg" alt="FAISS" />
+  <img src="assets/badges/pgvector.svg" alt="pgvector" />
+  <img src="assets/badges/rag.svg" alt="RAG" />
+  <img src="assets/badges/vectorless-rag.svg" alt="Vectorless RAG" />
+  <img src="assets/badges/mcp.svg" alt="MCP" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
   <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
   <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square" alt="MLflow" />
