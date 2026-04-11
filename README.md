@@ -11,34 +11,59 @@
 <p align="center">
   <a href="https://narendranathe.github.io"><img src="https://img.shields.io/badge/Portfolio-Live%20Site-2D5A4A?style=flat-square" alt="Portfolio" /></a>
   <a href="https://linkedin.com/in/narendranathe"><img src="https://img.shields.io/badge/LinkedIn-Narendranath%20Edara-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://narendranathe.substack.com"><img src="https://img.shields.io/badge/Substack-AI%20Systems%20Notes-FF6719?style=flat-square&logo=substack&logoColor=white" alt="Substack" /></a>
-  <a href="mailto:edara.narendranath@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://narendranathe.substack.com"><img src="https://img.shields.io/badge/Substack-Notes%20on%20AI%20Systems-FF6719?style=flat-square&logo=substack&logoColor=white" alt="Substack" /></a>
+  <a href="mailto:edara.narendranath@gmail.com"><img src="https://img.shields.io/badge/Email-edara.narendranath%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://doi.org/10.1080/10495142.2025.2525123"><img src="https://img.shields.io/badge/Publication-Taylor%20%26%20Francis-8A2BE2?style=flat-square" alt="Publication" /></a>
 </p>
 
 <p align="center">
-  <code>Dallas, TX</code> <code>Hybrid / Relocation</code> <code>edara.narendranath@gmail.com</code>
+  <code>intent -> retrieve -> generate -> govern -> observe</code>
 </p>
 
 <p align="center">
-  Building governed enterprise AI at <strong>ExponentHR</strong> and shipping <strong>AutoApply AI</strong>, <strong>tailor-resume</strong>, and <strong>JobScout</strong>.
+  <strong>Dallas, TX</strong> | <strong>Hybrid / Relocation</strong> | <strong>edara.narendranath@gmail.com</strong>
 </p>
 
 ---
 
-### Enterprise AI at ExponentHR
-Retrieval, semantic joins, and secure SQL generation for governed HR analytics.  
-`400 clients` `6K+ columns` `12s -> 4s latency`
+I build production AI systems where the real work is not just the model call, but the retrieval, ranking, guardrails, observability, failure handling, and developer ergonomics that make the system dependable in production.
 
-### AutoApply AI: Discover -> Tailor -> Apply
-Workflow automation across Chrome MV3, FastAPI, retrieval, and multi-provider LLM routing.  
-`11 ATS adapters` `6 providers`
+## What I Build
 
-### Engines Behind the Workflow
-`tailor-resume` for reusable tailoring. `JobScout` for discovery and ranking.  
-`CLI` `MCP` `PyPI` `190 tests` `130+ companies`
+- Governed enterprise AI and analytics systems.
+- Backend-heavy workflow products that connect discovery, tailoring, application automation, and tracking.
+- Reusable tooling for retrieval, packaging, developer workflows, and production AI delivery.
 
-### Working With
+## Systems In Flight
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Governed NL-to-SQL at ExponentHR</h3>
+      At <strong>ExponentHR</strong>, I work on governed AI and analytics systems across Microsoft Fabric, FAISS retrieval, semantic joins, and secure SQL generation.<br/><br/>
+      <sub><strong>400 clients</strong> | <strong>6K+ catalog columns</strong> | <strong>12s -> 4s query latency</strong> | <strong>67% ETL compute reduction</strong></sub>
+    </td>
+    <td width="50%" valign="top">
+      <h3>AutoApply AI Workflow Platform</h3>
+      <strong>AutoApply AI</strong> is the product surface: a workflow that connects discovery, tailoring, application automation, and tracking across Chrome MV3, FastAPI, retrieval, and model routing.<br/><br/>
+      <sub><strong>discover -> tailor -> apply -> track</strong> | <strong>11 ATS adapters</strong> | <strong>6 LLM providers</strong></sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>tailor-resume as the Tailoring Core</h3>
+      <strong>tailor-resume</strong> is the extracted engine behind that workflow, delivered through CLI, Streamlit, MCP, and Python package surfaces with strong test coverage.<br/><br/>
+      <sub><strong>CLI</strong> | <strong>Streamlit</strong> | <strong>MCP</strong> | <strong>PyPI</strong> | <strong>190 tests</strong></sub>
+    </td>
+    <td width="50%" valign="top">
+      <h3>JobScout for Discovery and Ranking</h3>
+      <strong>JobScout</strong> powers the discovery side with scraping, preference matching, relevance scoring, and alerts across technical roles and ATS ecosystems.<br/><br/>
+      <sub><strong>130+ companies</strong> | <strong>ranking engine</strong> | <strong>alerts</strong> | <strong>preference matching</strong></sub>
+    </td>
+  </tr>
+</table>
+
+## Tools I Reach For
 
 <p align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
@@ -57,7 +82,24 @@ Workflow automation across Chrome MV3, FastAPI, retrieval, and multi-provider LL
   <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus" />
   <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana" />
   <img src="https://img.shields.io/badge/Azure%20DevOps-0078D7?style=flat-square&logo=azuredevops&logoColor=white" alt="Azure DevOps" />
+  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
 </p>
+
+## Credentials & Anchors
+
+- **M.S. Information Science & Technology**, Missouri S&T, **4.0 GPA**
+- **DP-700 Microsoft Certified Data Engineer**
+- **Published researcher**, Taylor & Francis 2025: [Sentiment Analysis for Visitor Insights](https://doi.org/10.1080/10495142.2025.2525123)
+
+## Writing, Projects, and Contact
+
+- [Portfolio](https://narendranathe.github.io)
+- [Substack](https://narendranathe.substack.com)
+- [AutoApply AI](https://github.com/narendranathe/autoapply-ai)
+- [tailor-resume](https://github.com/narendranathe/tailor-resume)
+- [JobScout](https://github.com/narendranathe/job-scout)
+- [LinkedIn](https://linkedin.com/in/narendranathe)
+- [Email](mailto:edara.narendranath@gmail.com)
 
 ---
 
@@ -68,4 +110,8 @@ Workflow automation across Chrome MV3, FastAPI, retrieval, and multi-provider LL
 
 <p align="center">
   <img height="170" src="https://streak-stats.demolab.com?user=narendranathe&hide_border=true" alt="Narendranath contribution streak" />
+</p>
+
+<p align="center">
+  <em>I build production AI systems, retrieval pipelines, and governed data platforms that make teams faster without making systems harder to trust.</em>
 </p>
