@@ -1,7 +1,7 @@
-<h1 align="center">Narendranath Edara</h1>
+<h1 align="center">Narendranath Edara (Naren)</h1>
 
 <p align="center">
-  <strong>Senior AI Platform Engineer | Applied AI Systems | Backend AI | LLM Infrastructure</strong>
+  <strong>Senior AI Platform Engineer building production LLM systems, retrieval pipelines, AI data platforms, and backend workflow products.</strong>
 </p>
 
 <p align="center">
@@ -16,46 +16,39 @@
   <a href="https://doi.org/10.1080/10495142.2025.2525123"><img src="https://img.shields.io/badge/Publication-Taylor%20%26%20Francis-8A2BE2?style=flat-square" alt="Publication" /></a>
 </p>
 
----
+Based in Dallas, TX. Open to Senior AI Platform Engineer, Applied AI Engineer, ML Platform Engineer, AI Data Platform Engineer, and Backend Engineer (AI) roles. H1B transfer sponsorship required.
 
-I build production AI systems that are meant to survive real usage, not just look impressive in a demo. My work sits at the intersection of retrieval, governance, analytics, workflow automation, and developer tooling, with a strong bias toward systems that are measurable, observable, and trustworthy once they leave the prototype stage.
+[Portfolio: AI platform case studies](https://narendranathe.github.io) | [LinkedIn: Narendranath Edara](https://linkedin.com/in/narendranathe) | [Writing: Notes on AI systems](https://narendranathe.substack.com) | [Publication: Sentiment Analysis for Visitor Insights](https://doi.org/10.1080/10495142.2025.2525123) | [Email](mailto:edara.narendranath@gmail.com)
 
-Most of what I enjoy building lives in the messy middle between product and infrastructure: the retrieval layer behind an LLM experience, the workflow that turns intent into action, the guardrails that keep enterprise data safe, and the tooling that makes the whole system easier for teams to ship and operate.
+## What I Build
 
-## What I Build In Practice
+I build production AI systems that have to survive real usage, not just demos. My work sits at the intersection of backend engineering, retrieval, secure data access, workflow automation, observability, and platform reliability.
 
-- Governed enterprise AI and analytics systems.
-- Backend-heavy workflow products that connect discovery, tailoring, application automation, and tracking.
-- Reusable tooling for retrieval, packaging, developer workflows, and production AI delivery.
+At ExponentHR, I architected a catalog-driven NL-to-SQL platform on Microsoft Fabric that serves 400 enterprise clients. The system uses FAISS retrieval across 6,000+ HR data columns, Claude-generated T-SQL, a NetworkX semantic graph for cross-domain joins, and query-time row- and column-level security. I reduced query latency from 12 seconds to under 4 seconds, cut support tickets by about 40%, and reworked CDC ETL from about 30 minutes to under 8 minutes, reducing compute cost by about 67%.
 
-## Systems I Am Building
+Outside work, I ship applied AI products across FastAPI, TypeScript, PostgreSQL, Chrome extensions, RAG pipelines, multi-provider model routing, packaging, CI/CD, and live deployments.
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Enterprise AI and Analytics at ExponentHR</h3>
-      At <strong>ExponentHR</strong>, I work on governed AI and analytics systems across Microsoft Fabric, FAISS retrieval, semantic joins, and secure SQL generation for enterprise HR data.<br/><br/>
-      <sub><strong>400 clients</strong> | <strong>6K+ catalog columns</strong> | <strong>12s -> 4s query latency</strong> | <strong>67% ETL compute reduction</strong></sub>
-    </td>
-    <td width="50%" valign="top">
-      <h3>AutoApply AI: Application Workflow Platform</h3>
-      <strong>AutoApply AI</strong> is the workflow platform that connects discovery, tailoring, application automation, and tracking across Chrome MV3, FastAPI, retrieval, and model routing.<br/><br/>
-      <sub><strong>discover -> tailor -> apply -> track</strong> | <strong>11 ATS adapters</strong> | <strong>6 LLM providers</strong></sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>tailor-resume: Resume Tailoring Engine</h3>
-      <strong>tailor-resume</strong> is the extracted intelligence layer behind that workflow, delivered through CLI, Streamlit, MCP, and Python package surfaces with strong test coverage.<br/><br/>
-      <sub><strong>CLI</strong> | <strong>Streamlit</strong> | <strong>MCP</strong> | <strong>PyPI</strong> | <strong>190 tests</strong></sub>
-    </td>
-    <td width="50%" valign="top">
-      <h3>JobScout: Role Discovery and Ranking</h3>
-      <strong>JobScout</strong> powers the discovery side with scraping, preference matching, relevance scoring, and alerts across technical roles and ATS ecosystems.<br/><br/>
-      <sub><strong>130+ companies</strong> | <strong>ranking engine</strong> | <strong>alerts</strong> | <strong>preference matching</strong></sub>
-    </td>
-  </tr>
-</table>
+## Where I Fit Best
+
+- AI platform engineering for enterprise or developer-facing AI products
+- Applied AI systems with retrieval, model routing, evaluation loops, and secure data access
+- Backend and platform work where performance, observability, cost, and reliability matter
+- End-to-end ownership from architecture and implementation through production operations
+
+## Featured Systems
+
+- [AutoApply AI](https://github.com/narendranathe/autoapply-ai): production AI job application platform spanning FastAPI, Chrome MV3, PostgreSQL, Redis, retrieval, reward-aware feedback loops, and 11 ATS adapters. Live deployment with 355+ backend tests.
+- [tailor-resume](https://github.com/narendranathe/tailor-resume): resume tailoring engine delivered through CLI, Streamlit, typed MCP server, and Python package surfaces with ATS gap analysis, structured profile extraction, and 190 tests.
+- [JobScout](https://github.com/narendranathe/job-scout): automated job discovery and ranking system covering 130+ companies with alerts, relevance scoring, application memory, and workflow automation.
+- [Fraud Detection ML Platform](https://github.com/narendranathe/fraud-detection-ml-platform): streaming ML platform using Kafka, FastAPI, MLflow, Prometheus, and Grafana for real-time inference, monitoring, and observability.
+- [Portfolio Website](https://narendranathe.github.io): narrative hub for projects, writing, and applied AI / AI platform engineering positioning.
+
+## Current Focus
+
+- Governed enterprise AI and analytics systems
+- LLM backends and retrieval pipelines
+- AI workflow products that connect discovery, generation, and action
+- Production engineering for systems that need measurable quality, clear guardrails, and reliable operations
 
 ## Tools I Reach For
 
@@ -79,37 +72,27 @@ Most of what I enjoy building lives in the messy middle between product and infr
   <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
 </p>
 
-## Credentials & Anchors
+## Earlier Foundation
 
-- **M.S. Information Science & Technology**, Missouri S&T, **4.0 GPA**
-- **DP-700 Microsoft Certified Data Engineer**
-- **Published researcher**, Taylor & Francis 2025: [Sentiment Analysis for Visitor Insights](https://doi.org/10.1080/10495142.2025.2525123)
+- Missouri S&T: built Azure AI anomaly detection pipelines, improved alert quality, migrated workloads to AKS with HPA, and published NLP research.
+- Zomato: built competitor analytics, search relevance, and internal search systems at production scale.
 
-## Around My Work
+## Core Stack
 
-<table>
-  <tr>
-    <td width="33%" valign="top">
-      <h3>Writing</h3>
-      <a href="https://narendranathe.substack.com"><img src="https://img.shields.io/badge/Substack-Notes%20on%20AI%20Systems-FF6719?style=flat-square&logo=substack&logoColor=white" alt="Substack" /></a><br/>
-      <a href="https://doi.org/10.1080/10495142.2025.2525123"><img src="https://img.shields.io/badge/Publication-Taylor%20%26%20Francis-8A2BE2?style=flat-square" alt="Publication" /></a>
-    </td>
-    <td width="33%" valign="top">
-      <h3>Projects</h3>
-      <a href="https://narendranathe.github.io"><img src="https://img.shields.io/badge/Portfolio-Live%20Site-2D5A4A?style=flat-square" alt="Portfolio" /></a><br/>
-      <a href="https://github.com/narendranathe/autoapply-ai"><img src="https://img.shields.io/badge/AutoApply%20AI-GitHub-111111?style=flat-square&logo=github&logoColor=white" alt="AutoApply AI" /></a><br/>
-      <a href="https://github.com/narendranathe/tailor-resume"><img src="https://img.shields.io/badge/tailor--resume-GitHub-111111?style=flat-square&logo=github&logoColor=white" alt="tailor-resume" /></a><br/>
-      <a href="https://github.com/narendranathe/job-scout"><img src="https://img.shields.io/badge/JobScout-GitHub-111111?style=flat-square&logo=github&logoColor=white" alt="JobScout" /></a>
-    </td>
-    <td width="33%" valign="top">
-      <h3>Connect</h3>
-      <a href="https://linkedin.com/in/narendranathe"><img src="https://img.shields.io/badge/LinkedIn-Narendranath%20Edara-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a><br/>
-      <a href="mailto:edara.narendranath@gmail.com"><img src="https://img.shields.io/badge/Email-edara.narendranath%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
-    </td>
-  </tr>
-</table>
+Python, SQL, T-SQL, TypeScript, FastAPI, PostgreSQL, Redis, FAISS, pgvector, Microsoft Fabric, Kafka, Spark, Docker, Kubernetes, MLflow, Prometheus, Grafana, GitHub Actions, Azure DevOps.
 
----
+## Credentials
+
+- M.S. Information Science & Technology, Missouri S&T, 4.0 GPA
+- DP-700 Microsoft Certified Data Engineer
+- [Published researcher: Sentiment Analysis for Visitor Insights](https://doi.org/10.1080/10495142.2025.2525123)
+
+## Contact And Writing
+
+- [Portfolio: narendranathe.github.io](https://narendranathe.github.io)
+- [LinkedIn: linkedin.com/in/narendranathe](https://linkedin.com/in/narendranathe)
+- [Substack: notes on AI systems](https://narendranathe.substack.com)
+- [Email: edara.narendranath@gmail.com](mailto:edara.narendranath@gmail.com)
 
 <p align="center">
   <img height="170" src="https://github-readme-stats.vercel.app/api?username=narendranathe&show_icons=true&hide_border=true&rank_icon=github&include_all_commits=true" alt="Narendranath GitHub stats" />
