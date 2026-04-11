@@ -14,59 +14,44 @@
   <a href="https://doi.org/10.1080/10495142.2025.2525123"><img src="https://img.shields.io/badge/Publication-Taylor%20%26%20Francis-8A2BE2?style=flat-square" alt="Publication" /></a>
 </p>
 
+<p align="center">
+  <code>intent -> retrieve -> generate -> govern -> observe</code>
+</p>
+
 ---
 
-I build production AI systems: enterprise AI platforms, retrieval pipelines, backend-heavy LLM products, and developer tooling that are designed to be used, governed, and trusted in the real world.
+I like building systems where the interesting part is not just the model call, but everything around it: retrieval, ranking, auth, observability, failure handling, developer ergonomics, and the path from idea to production.
 
-My strongest work lives at the intersection of:
+What that looks like in practice:
 
-- AI platform engineering
-- applied AI systems
-- backend APIs and workflow orchestration
-- governed analytics and retrieval infrastructure
-- observability, CI/CD, and production reliability
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Enterprise AI Platforms</h3>
+      At <strong>ExponentHR</strong>, I work on governed AI and analytics systems across Microsoft Fabric, FAISS retrieval, semantic graph joins, and secure SQL generation.<br/><br/>
+      <sub><strong>400 clients</strong> | <strong>6K+ catalog columns</strong> | <strong>12s -> 4s query latency</strong> | <strong>67% ETL compute reduction</strong></sub>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Workflow Products</h3>
+      <strong>AutoApply AI</strong> is the flagship product system: a workflow that connects discovery, tailoring, application automation, and tracking across Chrome MV3, FastAPI, retrieval, and model routing.<br/><br/>
+      <sub><strong>discover -> tailor -> apply -> track</strong> | <strong>11 ATS adapters</strong> | <strong>6 LLM providers</strong></sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Reusable Engines</h3>
+      <strong>tailor-resume</strong> is the extracted tailoring core behind that workflow, delivered through CLI, Streamlit, MCP, and Python package surfaces with strong test coverage.<br/><br/>
+      <sub><strong>CLI</strong> | <strong>Streamlit</strong> | <strong>MCP</strong> | <strong>PyPI</strong> | <strong>190 tests</strong></sub>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Discovery & Ranking</h3>
+      <strong>JobScout</strong> powers the discovery side of the system with scraping, preference matching, relevance scoring, and alerting across technical roles and ATS ecosystems.<br/><br/>
+      <sub><strong>130+ companies</strong> | <strong>ranking engine</strong> | <strong>alerts</strong> | <strong>preference matching</strong></sub>
+    </td>
+  </tr>
+</table>
 
-## What I'm Building
-
-- **ExponentHR NL-to-SQL Platform**
-  Enterprise AI platform work across Microsoft Fabric, FAISS retrieval, semantic graph joins, and secure SQL generation for 400 enterprise clients.
-
-- **AutoApply AI**
-  Flagship workflow product for discover -> tailor -> apply -> track across Chrome MV3, FastAPI, model routing, retrieval, and application automation.
-
-- **tailor-resume**
-  Reusable tailoring engine extracted into CLI, Streamlit, MCP, and Python package surfaces with strong automated test coverage.
-
-- **JobScout**
-  Discovery and ranking engine feeding the broader workflow platform with scraping, filtering, scoring, and alerting.
-
-## Signal Snapshot
-
-- **400 enterprise clients** served through ExponentHR analytics infrastructure
-- **6K+ catalog columns** mapped across governed HR data domains
-- **67% ETL compute reduction** from CDC redesign and pipeline optimization
-- **3 months -> 14 days** release-cycle compression by fixing delivery bottlenecks
-- **11 ATS adapters + 6 LLM providers** across AutoApply AI
-- **190 tests** in the extracted `tailor-resume` core
-
-## Selected Work
-
-- [AutoApply AI](https://github.com/narendranathe/autoapply-ai)  
-  End-to-end AI workflow platform with extension, backend APIs, retrieval, model routing, and application automation.
-
-- [tailor-resume](https://github.com/narendranathe/tailor-resume)  
-  Resume tailoring engine with MCP, PyPI, Streamlit, and LaTeX generation workflows.
-
-- [fraud-detection-ml-platform](https://github.com/narendranathe/fraud-detection-ml-platform)  
-  Real-time ML platform using Kafka, FastAPI, MLflow, Prometheus, and Grafana.
-
-- [job-scout](https://github.com/narendranathe/job-scout)  
-  Discovery and ranking system scraping 130+ company career pages with alerts and resume matching.
-
-- [Portfolio](https://narendranathe.github.io)  
-  Public narrative layer tying together enterprise work, applied AI systems, and project architecture.
-
-## Working With
+## I Reach For
 
 <p align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
@@ -75,26 +60,32 @@ My strongest work lives at the intersection of:
   <img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" alt="Kafka" />
   <img src="https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="Azure" />
   <img src="https://img.shields.io/badge/Microsoft%20Fabric-5B2EFF?style=flat-square" alt="Microsoft Fabric" />
+  <img src="https://img.shields.io/badge/FAISS-2D5A4A?style=flat-square" alt="FAISS" />
+  <img src="https://img.shields.io/badge/pgvector-0F766E?style=flat-square" alt="pgvector" />
+  <img src="https://img.shields.io/badge/RAG-7C3AED?style=flat-square" alt="RAG" />
+  <img src="https://img.shields.io/badge/MCP-111111?style=flat-square" alt="MCP" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
   <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
   <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square" alt="MLflow" />
   <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus" />
   <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana" />
-  <img src="https://img.shields.io/badge/MCP-111111?style=flat-square" alt="MCP" />
+  <img src="https://img.shields.io/badge/Azure%20DevOps-0078D7?style=flat-square&logo=azuredevops&logoColor=white" alt="Azure DevOps" />
 </p>
 
-## Credentials
+## A Few Anchors
 
 - **M.S. Information Science & Technology**, Missouri S&T, **4.0 GPA**
 - **DP-700 Microsoft Certified Data Engineer**
 - **Published researcher**, Taylor & Francis 2025: [Sentiment Analysis for Visitor Insights](https://doi.org/10.1080/10495142.2025.2525123)
 
-## Connect
+## Around Here
 
-- Portfolio: [narendranathe.github.io](https://narendranathe.github.io)
-- LinkedIn: [linkedin.com/in/narendranathe](https://linkedin.com/in/narendranathe)
-- GitHub: [github.com/narendranathe](https://github.com/narendranathe)
-- Email: [edara.narendranath@gmail.com](mailto:edara.narendranath@gmail.com)
+- [Portfolio](https://narendranathe.github.io)
+- [AutoApply AI](https://github.com/narendranathe/autoapply-ai)
+- [tailor-resume](https://github.com/narendranathe/tailor-resume)
+- [JobScout](https://github.com/narendranathe/job-scout)
+- [LinkedIn](https://linkedin.com/in/narendranathe)
+- [Email](mailto:edara.narendranath@gmail.com)
 
 ---
 
