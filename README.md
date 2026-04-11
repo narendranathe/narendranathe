@@ -37,11 +37,32 @@ Outside work, I ship applied AI products across FastAPI, TypeScript, PostgreSQL,
 
 ## Featured Systems
 
-- [AutoApply AI](https://github.com/narendranathe/autoapply-ai): production AI job application platform spanning FastAPI, Chrome MV3, PostgreSQL, Redis, retrieval, reward-aware feedback loops, and 11 ATS adapters. Live deployment with 355+ backend tests.
-- [tailor-resume](https://github.com/narendranathe/tailor-resume): resume tailoring engine delivered through CLI, Streamlit, typed MCP server, and Python package surfaces with ATS gap analysis, structured profile extraction, and 190 tests.
-- [JobScout](https://github.com/narendranathe/job-scout): automated job discovery and ranking system covering 130+ companies with alerts, relevance scoring, application memory, and workflow automation.
-- [Fraud Detection ML Platform](https://github.com/narendranathe/fraud-detection-ml-platform): streaming ML platform using Kafka, FastAPI, MLflow, Prometheus, and Grafana for real-time inference, monitoring, and observability.
-- [Portfolio Website](https://narendranathe.github.io): narrative hub for projects, writing, and applied AI / AI platform engineering positioning.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Enterprise AI and Analytics at ExponentHR</h3>
+      At <strong>ExponentHR</strong>, I architected a catalog-driven NL-to-SQL platform across Microsoft Fabric, FAISS retrieval, semantic joins, and secure SQL generation for enterprise HR data.<br/><br/>
+      <sub><strong>400 clients</strong> | <strong>6K+ catalog columns</strong> | <strong>12s -&gt; under 4s query latency</strong> | <strong>67% ETL compute reduction</strong></sub>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/narendranathe/autoapply-ai">AutoApply AI</a></h3>
+      <strong>AutoApply AI</strong> is the workflow platform that connects discovery, tailoring, application automation, and tracking across Chrome MV3, FastAPI, retrieval, and model routing.<br/><br/>
+      <sub><strong>discover -&gt; tailor -&gt; apply -&gt; track</strong> | <strong>11 ATS adapters</strong> | <strong>355+ backend tests</strong></sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/narendranathe/tailor-resume">tailor-resume</a></h3>
+      <strong>tailor-resume</strong> is the extracted intelligence layer behind that workflow, delivered through CLI, Streamlit, MCP, and Python package surfaces with strong test coverage.<br/><br/>
+      <sub><strong>CLI</strong> | <strong>Streamlit</strong> | <strong>MCP</strong> | <strong>PyPI</strong> | <strong>190 tests</strong></sub>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/narendranathe/job-scout">JobScout</a></h3>
+      <strong>JobScout</strong> powers the discovery side with scraping, preference matching, relevance scoring, alerts, and application memory across 130+ companies.<br/><br/>
+      <sub><strong>130+ companies</strong> | <strong>ranking engine</strong> | <strong>alerts</strong> | <strong>preference matching</strong></sub>
+    </td>
+  </tr>
+</table>
 
 ## Current Focus
 
@@ -50,13 +71,17 @@ Outside work, I ship applied AI products across FastAPI, TypeScript, PostgreSQL,
 - AI workflow products that connect discovery, generation, and action
 - Production engineering for systems that need measurable quality, clear guardrails, and reliable operations
 
-## Tools I Reach For
+## Core Stack
 
 <p align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/SQL%20%2F%20T--SQL-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white" alt="SQL and T-SQL" />
   <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
   <img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" alt="Kafka" />
+  <img src="https://img.shields.io/badge/Apache%20Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" alt="Apache Spark" />
   <img src="https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="Azure" />
   <img src="https://img.shields.io/badge/Microsoft%20Fabric-5B2EFF?style=flat-square" alt="Microsoft Fabric" />
   <img src="https://img.shields.io/badge/FAISS-2D5A4A?style=flat-square" alt="FAISS" />
@@ -77,31 +102,11 @@ Outside work, I ship applied AI products across FastAPI, TypeScript, PostgreSQL,
 - Missouri S&T: built Azure AI anomaly detection pipelines, improved alert quality, migrated workloads to AKS with HPA, and published NLP research.
 - Zomato: built competitor analytics, search relevance, and internal search systems at production scale.
 
-## Core Stack
-
-Python, SQL, T-SQL, TypeScript, FastAPI, PostgreSQL, Redis, FAISS, pgvector, Microsoft Fabric, Kafka, Spark, Docker, Kubernetes, MLflow, Prometheus, Grafana, GitHub Actions, Azure DevOps.
-
 ## Credentials
 
 - M.S. Information Science & Technology, Missouri S&T, 4.0 GPA
 - DP-700 Microsoft Certified Data Engineer
 - [Published researcher: Sentiment Analysis for Visitor Insights](https://doi.org/10.1080/10495142.2025.2525123)
-
-## Contact And Writing
-
-- [Portfolio: narendranathe.github.io](https://narendranathe.github.io)
-- [LinkedIn: linkedin.com/in/narendranathe](https://linkedin.com/in/narendranathe)
-- [Substack: notes on AI systems](https://narendranathe.substack.com)
-- [Email: edara.narendranath@gmail.com](mailto:edara.narendranath@gmail.com)
-
-<p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=narendranathe&show_icons=true&hide_border=true&rank_icon=github&include_all_commits=true" alt="Narendranath GitHub stats" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=narendranathe&layout=compact&hide_border=true&langs_count=8" alt="Top languages" />
-</p>
-
-<p align="center">
-  <img height="170" src="https://streak-stats.demolab.com?user=narendranathe&hide_border=true" alt="Narendranath contribution streak" />
-</p>
 
 <p align="center">
   <em>I build production AI systems, retrieval pipelines, and governed data platforms that make teams faster without making systems harder to trust.</em>
