@@ -16,10 +16,6 @@
   <a href="https://doi.org/10.1080/10495142.2025.2525123"><img src="https://img.shields.io/badge/Publication-Taylor%20%26%20Francis-8A2BE2?style=flat-square" alt="Publication" /></a>
 </p>
 
-Based in Dallas, TX. Open to Senior AI Platform Engineer, Applied AI Engineer, ML Platform Engineer, AI Data Platform Engineer, and Backend Engineer (AI) roles. H1B transfer sponsorship required.
-
-[Portfolio: AI platform case studies](https://narendranathe.github.io) | [LinkedIn: Narendranath Edara](https://linkedin.com/in/narendranathe) | [Writing: Notes on AI systems](https://narendranathe.substack.com) | [Publication: Sentiment Analysis for Visitor Insights](https://doi.org/10.1080/10495142.2025.2525123) | [Email](mailto:edara.narendranath@gmail.com)
-
 ## What I Build
 
 I build production AI systems that have to survive real usage, not just demos. My work sits at the intersection of backend engineering, retrieval, secure data access, workflow automation, observability, and platform reliability.
