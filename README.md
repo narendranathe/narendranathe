@@ -20,7 +20,7 @@
 
 I build production AI systems that have to survive real usage, not just demos. My work sits at the intersection of backend engineering, retrieval, secure data access, workflow automation, observability, and platform reliability.
 
-At ExponentHR, I architected a catalog-driven NL-to-SQL platform on Microsoft Fabric that serves 400 enterprise clients. The system uses FAISS retrieval across 6,000+ HR data columns, Claude-generated T-SQL, a NetworkX semantic graph for cross-domain joins, and query-time row- and column-level security. I reduced query latency from 12 seconds to under 4 seconds, cut support tickets by about 40%, and reworked CDC ETL from about 30 minutes to under 8 minutes, reducing compute cost by about 67%.
+At ExponentHR, I lead enterprise data platform modernization across ETL reliability, deployment automation, and multi-tenant analytics operations supporting 400 enterprise clients. I reworked CDC ETL from about 30 minutes to under 8 minutes, reduced compute cost by about 67%, compressed deployment cycles from 3 months to 14 days, and automated database refresh workflows that previously required heavy manual effort.
 
 Outside work, I ship applied AI products across FastAPI, TypeScript, PostgreSQL, Chrome extensions, RAG pipelines, multi-provider model routing, packaging, CI/CD, and live deployments.
 
@@ -36,9 +36,9 @@ Outside work, I ship applied AI products across FastAPI, TypeScript, PostgreSQL,
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>Enterprise AI and Analytics at ExponentHR</h3>
-      At <strong>ExponentHR</strong>, I architected a catalog-driven NL-to-SQL platform across Microsoft Fabric, FAISS retrieval, semantic joins, and secure SQL generation for enterprise HR data.<br/><br/>
-      <sub><strong>400 clients</strong> | <strong>6K+ catalog columns</strong> | <strong>12s -&gt; under 4s query latency</strong> | <strong>67% ETL compute reduction</strong></sub>
+      <h3>Enterprise Data Platform at ExponentHR</h3>
+      At <strong>ExponentHR</strong>, I led ETL modernization, deployment automation, and database operations across a multi-tenant HR/payroll data platform serving enterprise clients.<br/><br/>
+      <sub><strong>400 clients</strong> | <strong>30m -&gt; under 8m ETL runtime</strong> | <strong>3 months -&gt; 14 days deployment cycle</strong> | <strong>67% ETL compute reduction</strong></sub>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/narendranathe/autoapply-ai">AutoApply AI</a></h3>
@@ -62,7 +62,7 @@ Outside work, I ship applied AI products across FastAPI, TypeScript, PostgreSQL,
 
 ## Current Focus
 
-- Governed enterprise AI and analytics systems
+- Governed enterprise data and platform systems
 - LLM backends and retrieval pipelines
 - AI workflow products that connect discovery, generation, and action
 - Production engineering for systems that need measurable quality, clear guardrails, and reliable operations
@@ -79,8 +79,6 @@ Outside work, I ship applied AI products across FastAPI, TypeScript, PostgreSQL,
   <img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" alt="Kafka" />
   <img src="https://img.shields.io/badge/Apache%20Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" alt="Apache Spark" />
   <img src="https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="Azure" />
-  <img src="assets/badges/microsoft-fabric.svg" alt="Microsoft Fabric" />
-  <img src="assets/badges/faiss.svg" alt="FAISS" />
   <img src="assets/badges/pgvector.svg" alt="pgvector" />
   <img src="assets/badges/rag.svg" alt="RAG" />
   <img src="assets/badges/vectorless-rag.svg" alt="Vectorless RAG" />
