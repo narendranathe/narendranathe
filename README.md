@@ -58,11 +58,24 @@ Outside work, I ship applied AI products across FastAPI, TypeScript, PostgreSQL,
       <sub><strong>130+ companies</strong> | <strong>ranking engine</strong> | <strong>alerts</strong> | <strong>preference matching</strong></sub>
     </td>
   </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/narendranathe/fintune">FinTune</a></h3>
+      <strong>FinTune</strong> is a production-grade financial NLP system: QLoRA fine-tuning on Mistral-7B, 4-bit quantized inference, PII guardrails, real-time monitoring with drift detection, and autonomous self-recovery via circuit breaker pattern.<br/><br/>
+      <sub><strong>QLoRA</strong> | <strong>PEFT</strong> | <strong>4-bit NF4</strong> | <strong>FastAPI</strong> | <strong>circuit breaker</strong> | <strong>35+ tests</strong></sub>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/narendranathe/fraud-detection-ml-platform">Fraud Detection ML Platform</a></h3>
+      <strong>Fraud Detection</strong> is a real-time ML pipeline for transaction fraud detection with streaming inference, feature engineering, and model serving at scale.<br/><br/>
+      <sub><strong>real-time</strong> | <strong>streaming</strong> | <strong>feature store</strong> | <strong>model serving</strong></sub>
+    </td>
+  </tr>
 </table>
 
 ## Current Focus
 
 - Governed enterprise data and platform systems
+- LLM fine-tuning, quantization, and model optimization for production inference
 - LLM backends and retrieval pipelines
 - AI workflow products that connect discovery, generation, and action
 - Production engineering for systems that need measurable quality, clear guardrails, and reliable operations
@@ -83,6 +96,9 @@ Outside work, I ship applied AI products across FastAPI, TypeScript, PostgreSQL,
   <img src="assets/badges/rag.svg" alt="RAG" />
   <img src="assets/badges/vectorless-rag.svg" alt="Vectorless RAG" />
   <img src="assets/badges/mcp.svg" alt="MCP" />
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face" />
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
   <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
   <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square" alt="MLflow" />
