@@ -20,7 +20,7 @@
 
 I build production AI systems that have to survive real usage, not just demos. My work sits at the intersection of backend engineering, retrieval, secure data access, workflow automation, observability, and platform reliability.
 
-At ExponentHR, I lead enterprise data platform modernization across ETL reliability, deployment automation, and multi-tenant analytics operations supporting 400 enterprise clients. I reworked CDC ETL from about 30 minutes to under 8 minutes, reduced compute cost by about 67%, compressed deployment cycles from 3 months to 14 days, and automated database refresh workflows that previously required heavy manual effort.
+At ExponentHR, I lead enterprise data platform modernization across ETL reliability, deployment automation, and multi-tenant analytics operations across an enterprise client base. I reworked CDC ETL from about 30 minutes to under 8 minutes, reduced compute cost by about 67%, compressed deployment cycles from 3 months to 14 days, and automated database refresh workflows that previously required heavy manual effort.
 
 Outside work, I ship applied AI products across FastAPI, TypeScript, PostgreSQL, Chrome extensions, RAG pipelines, multi-provider model routing, packaging, CI/CD, and live deployments.
 
