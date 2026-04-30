@@ -20,7 +20,7 @@
 
 I build production AI systems that have to survive real usage, not just demos. My work sits at the intersection of backend engineering, retrieval, secure data access, workflow automation, observability, and platform reliability.
 
-At ExponentHR, I lead enterprise data platform modernization across ETL reliability, deployment automation, and multi-tenant analytics operations supporting 400 enterprise clients. I reworked CDC ETL from about 30 minutes to under 8 minutes, reduced compute cost by about 67%, compressed deployment cycles from 3 months to 14 days, and automated database refresh workflows that previously required heavy manual effort.
+At ExponentHR, I lead enterprise data platform modernization across ETL reliability, deployment automation, and multi-tenant analytics operations across an enterprise client base. I reworked CDC ETL from about 30 minutes to under 8 minutes, reduced compute cost by about 67%, compressed deployment cycles from 3 months to 14 days, and automated database refresh workflows that previously required heavy manual effort.
 
 Outside work, I ship applied AI products across FastAPI, TypeScript, PostgreSQL, Chrome extensions, RAG pipelines, multi-provider model routing, packaging, CI/CD, and live deployments.
 
@@ -36,21 +36,21 @@ Outside work, I ship applied AI products across FastAPI, TypeScript, PostgreSQL,
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>Enterprise Data Platform at ExponentHR</h3>
-      At <strong>ExponentHR</strong>, I led ETL modernization, deployment automation, and database operations across a multi-tenant HR/payroll data platform serving enterprise clients.<br/><br/>
-      <sub><strong>400 clients</strong> | <strong>30m -&gt; under 8m ETL runtime</strong> | <strong>3 months -&gt; 14 days deployment cycle</strong> | <strong>67% ETL compute reduction</strong></sub>
-    </td>
-    <td width="50%" valign="top">
       <h3><a href="https://github.com/narendranathe/autoapply-ai">AutoApply AI</a></h3>
       <strong>AutoApply AI</strong> is the workflow platform that connects discovery, tailoring, application automation, and tracking across Chrome MV3, FastAPI, retrieval, and model routing.<br/><br/>
       <sub><strong>discover -&gt; tailor -&gt; apply -&gt; track</strong> | <strong>11 ATS adapters</strong> | <strong>355+ backend tests</strong></sub>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/narendranathe/tailor-resume">tailor-resume</a></h3>
       <strong>tailor-resume</strong> is the extracted intelligence layer behind that workflow, delivered through CLI, Streamlit, MCP, and Python package surfaces with strong test coverage.<br/><br/>
       <sub><strong>CLI</strong> | <strong>Streamlit</strong> | <strong>MCP</strong> | <strong>PyPI</strong> | <strong>190 tests</strong></sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/narendranathe/fraud-detection-ml-platform">Fraud Detection ML Platform</a></h3>
+      <strong>Fraud Detection</strong> is a real-time ML pipeline for transaction fraud detection with streaming inference, feature engineering, and model serving at scale.<br/><br/>
+      <sub><strong>real-time</strong> | <strong>streaming</strong> | <strong>feature store</strong> | <strong>model serving</strong></sub>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/narendranathe/job-scout">JobScout</a></h3>
@@ -65,9 +65,9 @@ Outside work, I ship applied AI products across FastAPI, TypeScript, PostgreSQL,
       <sub><strong>QLoRA</strong> | <strong>PEFT</strong> | <strong>4-bit NF4</strong> | <strong>FastAPI</strong> | <strong>circuit breaker</strong> | <strong>35+ tests</strong></sub>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/narendranathe/fraud-detection-ml-platform">Fraud Detection ML Platform</a></h3>
-      <strong>Fraud Detection</strong> is a real-time ML pipeline for transaction fraud detection with streaming inference, feature engineering, and model serving at scale.<br/><br/>
-      <sub><strong>real-time</strong> | <strong>streaming</strong> | <strong>feature store</strong> | <strong>model serving</strong></sub>
+      <h3><a href="https://github.com/narendranathe/narendranathe.github.io">Portfolio Site</a></h3>
+      <strong>narendranathe.github.io</strong> is the recruiter narrative hub: Senior AI Platform Engineer portfolio focused on production LLM systems, retrieval pipelines, and AI-enabled data products.<br/><br/>
+      <sub><strong>Vite + TypeScript</strong> | <strong>case studies</strong> | <strong>tested forbidden-claim guard</strong></sub>
     </td>
   </tr>
 </table>
