@@ -1,7 +1,7 @@
 <h1 align="center">Narendranath Edara (Naren)</h1>
 
 <p align="center">
-  <strong>Senior AI Platform Engineer building production LLM systems, retrieval pipelines, AI data platforms, and backend workflow products.</strong>
+  <strong>Data engineer at ExponentHR. Cut CDC ETL 30 min to 8 min, deploys 3 months to 14 days. Open source: 330+ tests, zero deps, signed releases.</strong>
 </p>
 
 <p align="center">
@@ -18,67 +18,57 @@
 
 ## What I Build
 
-I build production AI systems that have to survive real usage, not just demos. My work sits at the intersection of backend engineering, retrieval, secure data access, workflow automation, observability, and platform reliability.
+At ExponentHR, I own ETL reliability, deployment automation, and database operations for a multi-tenant HR and payroll platform serving roughly 400 enterprise clients. I rebuilt the CDC pipeline from 30 minutes to under 8, cut ETL compute cost by 67%, and compressed the deployment cycle from 3 months to 14 days. I also built a self-healing SQL Agent that recovers failed jobs on its own and wrote the AAG failover runbooks the team runs when a database needs to fail over.
 
-At ExponentHR, I lead enterprise data platform modernization across ETL reliability, deployment automation, and multi-tenant analytics operations across an enterprise client base. I reworked CDC ETL from about 30 minutes to under 8 minutes, reduced compute cost by about 67%, compressed deployment cycles from 3 months to 14 days, and automated database refresh workflows that previously required heavy manual effort.
-
-Outside work, I ship applied AI products across FastAPI, TypeScript, PostgreSQL, Chrome extensions, RAG pipelines, multi-provider model routing, packaging, CI/CD, and live deployments.
+Outside of work I write production code, not portfolio filler: FastAPI services, retrieval pipelines, model routing, and a PyPI package with 330+ tests, zero runtime dependencies, and Sigstore-signed releases. Six projects below, ranked by how much of the engineering you can actually verify.
 
 ## Where I Fit Best
 
-- AI platform engineering for enterprise or developer-facing AI products
-- Applied AI systems with retrieval, model routing, evaluation loops, and secure data access
-- Backend and platform work where performance, observability, cost, and reliability matter
-- End-to-end ownership from architecture and implementation through production operations
+- Data platform reliability: ETL/CDC pipelines, deployment automation, database failover
+- Production ML systems: serving, drift monitoring, automatic recovery
+- Backend systems with retrieval, vector search, and model routing
+- Open source shipped with real test suites, signed releases, and no unnecessary dependencies
 
 ## Featured Systems
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>Enterprise Data Platform at ExponentHR</h3>
-      At <strong>ExponentHR</strong>, I led ETL modernization, deployment automation, and database operations across a multi-tenant HR/payroll data platform serving enterprise clients.<br/><br/>
-      <sub><strong>400 clients</strong> | <strong>30m -&gt; under 8m ETL runtime</strong> | <strong>3 months -&gt; 14 days deployment cycle</strong> | <strong>67% ETL compute reduction</strong></sub>
+      <h3><a href="https://github.com/narendranathe/repo-context-hooks">repo-context-hooks</a></h3>
+      Zero-dependency PyPI package that hooks into a coding agent's lifecycle (PostCompact, PreCompact, SessionEnd) to persist project context across sessions instead of losing it to a cold restart. Releases ship with Sigstore attestations you can verify yourself with <code>gh attestation verify</code>.<br/><br/>
+      <sub><strong>330+ tests</strong> | <strong>zero runtime deps</strong> | <strong>Sigstore-signed</strong> | <strong>PyPI</strong></sub>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/narendranathe/autoapply-ai">AutoApply AI</a></h3>
-      <strong>AutoApply AI</strong> is the workflow platform that connects discovery, tailoring, application automation, and tracking across Chrome MV3, FastAPI, retrieval, and model routing.<br/><br/>
-      <sub><strong>discover -&gt; tailor -&gt; apply -&gt; track</strong> | <strong>11 ATS adapters</strong> | <strong>355+ backend tests</strong></sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/narendranathe/tailor-resume">tailor-resume</a></h3>
-      <strong>tailor-resume</strong> is the extracted intelligence layer behind that workflow, delivered through CLI, Streamlit, MCP, and Python package surfaces with strong test coverage.<br/><br/>
-      <sub><strong>CLI</strong> | <strong>Streamlit</strong> | <strong>MCP</strong> | <strong>PyPI</strong> | <strong>190 tests</strong></sub>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/narendranathe/job-scout">JobScout</a></h3>
-      <strong>JobScout</strong> powers the discovery side with scraping, preference matching, relevance scoring, alerts, and application memory across 130+ companies.<br/><br/>
-      <sub><strong>130+ companies</strong> | <strong>ranking engine</strong> | <strong>alerts</strong> | <strong>preference matching</strong></sub>
+      <h3><a href="https://github.com/narendranathe/fraud-detection-ml-platform">Fraud Detection ML Platform</a></h3>
+      Streams transactions through Kafka into a LightGBM classifier serving predictions at P99 1.12ms, with MLflow tracking every training run and Prometheus/Grafana watching the live service. That latency puts it in the same class as a card-present authorization check, not a nightly batch score.<br/><br/>
+      <sub><strong>Kafka</strong> | <strong>LightGBM</strong> | <strong>P99 1.12ms</strong> | <strong>MLflow</strong> | <strong>Prometheus/Grafana</strong></sub>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/narendranathe/fintune">FinTune</a></h3>
-      <strong>FinTune</strong> is a production-grade financial NLP system: QLoRA fine-tuning on Mistral-7B, 4-bit quantized inference, PII guardrails, real-time monitoring with drift detection, and autonomous self-recovery via circuit breaker pattern.<br/><br/>
-      <sub><strong>QLoRA</strong> | <strong>PEFT</strong> | <strong>4-bit NF4</strong> | <strong>FastAPI</strong> | <strong>circuit breaker</strong> | <strong>35+ tests</strong></sub>
+      Fine-tunes Mistral-7B with QLoRA, quantizes to 4-bit for inference, and serves it through FastAPI behind a PII redaction layer. A drift monitor tracks output distribution and a circuit breaker pulls the model out of rotation automatically, no 2 AM page required.<br/><br/>
+      <sub><strong>QLoRA</strong> | <strong>4-bit NF4</strong> | <strong>PII redaction</strong> | <strong>drift monitor</strong> | <strong>circuit breaker</strong> | <strong>35+ tests</strong></sub>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/narendranathe/fraud-detection-ml-platform">Fraud Detection ML Platform</a></h3>
-      <strong>Fraud Detection</strong> is a real-time ML pipeline for transaction fraud detection with streaming inference, feature engineering, and model serving at scale.<br/><br/>
-      <sub><strong>real-time</strong> | <strong>streaming</strong> | <strong>feature store</strong> | <strong>model serving</strong></sub>
+      <h3><a href="https://github.com/narendranathe/autoapply-ai">AutoApply AI</a></h3>
+      Document intelligence platform: a FastAPI backend with 40+ endpoints and a Chrome MV3 extension on top, built around pgvector retrieval and a routing layer that picks between LLM providers per request. Parsing, embedding, and retrieval all run as backend services, not client-side scripts.<br/><br/>
+      <sub><strong>40+ endpoints</strong> | <strong>pgvector</strong> | <strong>LLM routing</strong> | <strong>Chrome MV3</strong> | <strong>355 tests</strong></sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/narendranathe/job-scout">JobScout</a></h3>
+      Ingestion engineering exercise: 130+ site-specific scrapers behind circuit breakers, so one broken scraper doesn't take the whole run down with it. Parsed results land in SQLite and get ranked with TF-IDF instead of a black-box relevance API.<br/><br/>
+      <sub><strong>130+ scrapers</strong> | <strong>circuit breakers</strong> | <strong>SQLite</strong> | <strong>TF-IDF ranking</strong></sub>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/narendranathe/tailor-resume">tailor-resume</a></h3>
+      The document-parsing and scoring engine extracted out of the AutoApply AI backend into its own package, shipped through a CLI, a Streamlit app, an MCP server, and a PyPI install. 190 tests cover the core logic once instead of four times across four front ends.<br/><br/>
+      <sub><strong>CLI</strong> | <strong>Streamlit</strong> | <strong>MCP</strong> | <strong>PyPI</strong> | <strong>190 tests</strong></sub>
     </td>
   </tr>
 </table>
-
-## Current Focus
-
-- Governed enterprise data and platform systems
-- LLM fine-tuning, quantization, and model optimization for production inference
-- LLM backends and retrieval pipelines
-- AI workflow products that connect discovery, generation, and action
-- Production engineering for systems that need measurable quality, clear guardrails, and reliable operations
 
 ## Core Stack
 
@@ -110,15 +100,12 @@ Outside work, I ship applied AI products across FastAPI, TypeScript, PostgreSQL,
 
 ## Earlier Foundation
 
-- Missouri S&T: built Azure AI anomaly detection pipelines, improved alert quality, migrated workloads to AKS with HPA, and published NLP research.
-- Zomato: built competitor analytics, search relevance, and internal search systems at production scale.
+- Missouri S&T: built Azure anomaly detection pipelines, migrated workloads to AKS with HPA, and published NLP research.
+- Zomato: took per-order unit economics from -Rs18 to +Rs2 across 300 restaurants.
+- Udaan: helped scale a category to Rs5 Cr/month GMV within 3 months.
 
 ## Credentials
 
 - M.S. Information Science & Technology, Missouri S&T, 4.0 GPA
 - DP-700 Microsoft Certified Data Engineer
 - [Published researcher: Sentiment Analysis for Visitor Insights](https://doi.org/10.1080/10495142.2025.2525123)
-
-<p align="center">
-  <em>I build production AI systems, retrieval pipelines, and governed data platforms that make teams faster without making systems harder to trust.</em>
-</p>
