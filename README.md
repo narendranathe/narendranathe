@@ -18,7 +18,7 @@
 
 ## What I Build
 
-At ExponentHR, I own ETL reliability, deployment automation, and database operations for a multi-tenant HR and payroll platform serving roughly 400 enterprise clients. I rebuilt the CDC pipeline from 30 minutes to under 8, cut ETL compute cost by 67%, and compressed the deployment cycle from 3 months to 14 days. I also built a self-healing SQL Agent that recovers failed jobs on its own and wrote the AAG failover runbooks the team runs when a database needs to fail over.
+At ExponentHR, I own ETL reliability, deployment automation, and database operations for a multi-tenant HR and payroll platform serving an enterprise client base. I rebuilt the CDC pipeline from 30 minutes to under 8, cut ETL compute cost by 67%, and compressed the deployment cycle from 3 months to 14 days. I also built a self-healing SQL Agent that recovers failed jobs on its own and wrote the AAG failover runbooks the team runs when a database needs to fail over.
 
 Outside of work I write production code, not portfolio filler: FastAPI services, retrieval pipelines, model routing, and a PyPI package with 330+ tests, zero runtime dependencies, and Sigstore-signed releases. Six projects below, ranked by how much of the engineering you can actually verify.
 
