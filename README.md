@@ -2,7 +2,7 @@
 
 <p align="center">
   <strong>I spent three years at Zomato and Udaan watching bad data cost real money.<br/>
-  Now I build payroll data pipelines at ExponentHR that fail loud and recover on their own: CDC in 8 minutes instead of 30, at a third of the compute.</strong>
+  Now I build payroll data pipelines at ExponentHR upholding SLAs: CDC in 8 minutes instead of 30, at a third of the compute.</strong>
 </p>
 
 <p align="center">
