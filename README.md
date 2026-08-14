@@ -1,124 +1,54 @@
-<h1 align="center">Narendranath Edara (Naren)</h1>
+# Narendranath Edara
 
-<p align="center">
-  <strong>Senior AI Platform Engineer building production LLM systems, retrieval pipelines, AI data platforms, and backend workflow products.</strong>
-</p>
+I build data pipelines at ExponentHR (payroll, 400 clients). Cut CDC ETL 30->8 min. Shipped a signed PyPI pkg, 330+ tests. Ex-Zomato, Udaan.
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=narendranathe&label=Profile%20views&color=0e75b6&style=flat" alt="narendranathe profile views" />
-</p>
+```
+At a glance: 3 yrs DE, 6 total | payroll platform, 400 clients | CDC ETL 30m -> 8m (-67% compute) | PyPI pkg, 330+ tests, Sigstore-signed | ex-Zomato, ex-Udaan
+```
 
-<p align="center">
-  <a href="https://narendranathe.github.io"><img src="https://img.shields.io/badge/Portfolio-Live%20Site-2D5A4A?style=flat-square" alt="Portfolio" /></a>
-  <a href="https://linkedin.com/in/narendranathe"><img src="https://img.shields.io/badge/LinkedIn-Narendranath%20Edara-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://narendranathe.substack.com"><img src="https://img.shields.io/badge/Substack-Notes%20on%20AI%20Systems-FF6719?style=flat-square&logo=substack&logoColor=white" alt="Substack" /></a>
-  <a href="mailto:edara.narendranath@gmail.com"><img src="https://img.shields.io/badge/Email-edara.narendranath%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://doi.org/10.1080/10495142.2025.2525123"><img src="https://img.shields.io/badge/Publication-Taylor%20%26%20Francis-8A2BE2?style=flat-square" alt="Publication" /></a>
-</p>
+---
 
-## What I Build
+## Repos, in order
 
-I build production AI systems that have to survive real usage, not just demos. My work sits at the intersection of backend engineering, retrieval, secure data access, workflow automation, observability, and platform reliability.
+**[repo-context-hooks](https://github.com/narendranathe/repo-context-hooks)** — gives coding agents memory across sessions.
+Mechanism: hooks fire at session boundaries (start, pre-compact, end) and write state to checked-in markdown, so the next session reads the repo instead of re-deriving it.
+Tradeoff: checked-in markdown over a database or cloud sync, because the repo is the one thing guaranteed to exist when the next session starts; telemetry rejected (off by default, preview before send) because a tool that reads your repos earns trust first.
+Impact: ~600 tokens and ~5 min saved per resumed session vs cold rediscovery, from the tool's own local log: 110 events, 90/100 contract score against a 20/100 no-hooks baseline.
 
-At ExponentHR, I lead enterprise data platform modernization across ETL reliability, deployment automation, and multi-tenant analytics operations across an enterprise client base. I reworked CDC ETL from about 30 minutes to under 8 minutes, reduced compute cost by about 67%, compressed deployment cycles from 3 months to 14 days, and automated database refresh workflows that previously required heavy manual effort.
+**[FinTune](https://github.com/narendranathe/fintune)** — Mistral-7B fine-tuned for financial sentiment, served like a product, not a demo.
+Mechanism: QLoRA freezes the 4-bit base weights and trains only small adapter matrices; at serve time, PII is masked before inference and a drift monitor watches output after.
+Tradeoff: regex that over-masks (any 8-17 digit string) over ML name detection, because a false positive costs readability while a false negative is a GLBA report; ~1-2% F1 loss accepted against full fine-tuning, which needs ~56 GB of VRAM.
+Impact: fine-tune runs in ~6 GB vs ~56 GB, so it fits on one consumer GPU; 35+ tests cover the breaker and drift paths, not just the model.
 
-Outside work, I ship applied AI products across FastAPI, TypeScript, PostgreSQL, Chrome extensions, RAG pipelines, multi-provider model routing, packaging, CI/CD, and live deployments.
+**[Fraud Detection](https://github.com/narendranathe/fraud-detection-ml-platform)** — Kafka pipeline scoring transactions with LightGBM in real time.
+Mechanism: a consumer pulls 50-message batches, posts each to a FastAPI scorer, and writes prediction plus latency to Postgres with dedupe-on-insert, so a replayed message is a no-op.
+Tradeoff: auto-commit offsets plus dedupe keys over exactly-once delivery, same protection without the broker ceremony; the known cost is one fresh DB connection per score, which caps the path at ~0.5 predictions/s against a 100 TPS producer, visible on the Grafana panel in the README.
+Impact: P99 1.12ms per score from the Prometheus histogram; longest run flagged 21 of 2,082 (0.94%) against a 2.03% training base rate, which exposed the untuned threshold.
 
-## Where I Fit Best
+**[AutoApply AI](https://github.com/narendranathe/autoapply-ai)** — document intelligence pipeline that turns web forms and job pages into structured data.
+Mechanism: a Chrome MV3 content script watches the DOM in tiers (mutation observer first, resize observer with a 50px/400ms debounce for wizard steps, postMessage bridge for iframes), posts findings to a 40-endpoint FastAPI backend, and routes each question type to one of 7 LLM providers in priority order.
+Tradeoff: Shadow DOM overlay plus sidepanel over rendering React into the host page, because CSS and CSP fights with Workday have no bottom; a body-level resize observer was rejected after it fired 10-15 times per step animation and raced the state map.
+Impact: 355 tests, 11 migrations; the tier-1 observer alone covers ~95% of ATS platforms.
 
-- AI platform engineering for enterprise or developer-facing AI products
-- Applied AI systems with retrieval, model routing, evaluation loops, and secure data access
-- Backend and platform work where performance, observability, cost, and reliability matter
-- End-to-end ownership from architecture and implementation through production operations
+**[JobScout](https://github.com/narendranathe/job-scout)** — ingestion pipeline keeping 130+ fragile career-page sources alive.
+Mechanism: 6 ATS APIs polled on tiers (24 companies every 5 min, full sweep hourly), each scraper wrapped in retry-with-backoff that returns an empty list instead of raising, results normalized into SQLite WAL and ranked by keyword plus TF-IDF.
+Tradeoff: SQLite WAL over Postgres, because one worker means one writer and WAL gives concurrent reads with no server to run; let-it-crash error handling rejected, because one schema change must zero out one company, not the sweep.
+Impact: $0/month on free tiers (~1,080 of 2,000 Action minutes); the 12am-5:30am skip cuts ~25% of compute with zero data loss.
 
-## Featured Systems
+**[tailor-resume](https://github.com/narendranathe/tailor-resume)** — stdlib-only engine that scores and rewrites a resume against a job description.
+Mechanism: 5 input formats parse into one Profile type (PDFs through a 4-tier fallback chain with glyph cleanup), a weighted formula scores the match (40% keywords, 30% category coverage, 20% bullet quality, 10% seniority), and bullets are cut to 20 words at render time, not in the editor.
+Tradeoff: deterministic stdlib core over LLM-first generation, because keyword coverage is measurable and free; the gate declines to generate below a score of 50, since a tool that always produces a resume lies some of the time.
+Impact: 458+ tests; the error log shows why the gate matters, a 3-character token filter once scored "sql", "ml", and "etl" as zero overlap until the floor dropped to 2.
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Enterprise Data Platform at ExponentHR</h3>
-      At <strong>ExponentHR</strong>, I led ETL modernization, deployment automation, and database operations across a multi-tenant HR/payroll data platform serving enterprise clients.<br/><br/>
-      <sub><strong>400 clients</strong> | <strong>30m -&gt; under 8m ETL runtime</strong> | <strong>3 months -&gt; 14 days deployment cycle</strong> | <strong>67% ETL compute reduction</strong></sub>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/narendranathe/autoapply-ai">AutoApply AI</a></h3>
-      <strong>AutoApply AI</strong> is the workflow platform that connects discovery, tailoring, application automation, and tracking across Chrome MV3, FastAPI, retrieval, and model routing.<br/><br/>
-      <sub><strong>discover -&gt; tailor -&gt; apply -&gt; track</strong> | <strong>11 ATS adapters</strong> | <strong>355+ backend tests</strong></sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/narendranathe/tailor-resume">tailor-resume</a></h3>
-      <strong>tailor-resume</strong> is the extracted intelligence layer behind that workflow, delivered through CLI, Streamlit, MCP, and Python package surfaces with strong test coverage.<br/><br/>
-      <sub><strong>CLI</strong> | <strong>Streamlit</strong> | <strong>MCP</strong> | <strong>PyPI</strong> | <strong>190 tests</strong></sub>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/narendranathe/job-scout">JobScout</a></h3>
-      <strong>JobScout</strong> powers the discovery side with scraping, preference matching, relevance scoring, alerts, and application memory across 130+ companies.<br/><br/>
-      <sub><strong>130+ companies</strong> | <strong>ranking engine</strong> | <strong>alerts</strong> | <strong>preference matching</strong></sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/narendranathe/fintune">FinTune</a></h3>
-      <strong>FinTune</strong> is a production-grade financial NLP system: QLoRA fine-tuning on Mistral-7B, 4-bit quantized inference, PII guardrails, real-time monitoring with drift detection, and autonomous self-recovery via circuit breaker pattern.<br/><br/>
-      <sub><strong>QLoRA</strong> | <strong>PEFT</strong> | <strong>4-bit NF4</strong> | <strong>FastAPI</strong> | <strong>circuit breaker</strong> | <strong>35+ tests</strong></sub>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/narendranathe/fraud-detection-ml-platform">Fraud Detection ML Platform</a></h3>
-      <strong>Fraud Detection</strong> is a real-time ML pipeline for transaction fraud detection with streaming inference, feature engineering, and model serving at scale.<br/><br/>
-      <sub><strong>real-time</strong> | <strong>streaming</strong> | <strong>feature store</strong> | <strong>model serving</strong></sub>
-    </td>
-  </tr>
-</table>
+---
 
-## Current Focus
+## Day job
 
-- Governed enterprise data and platform systems
-- LLM fine-tuning, quantization, and model optimization for production inference
-- LLM backends and retrieval pipelines
-- AI workflow products that connect discovery, generation, and action
-- Production engineering for systems that need measurable quality, clear guardrails, and reliable operations
+Data engineer at ExponentHR, a payroll platform for ~400 clients. CDC ETL from 30 minutes to 8 (-67% compute). Deployment cycle from 3 months to 14 days. Self-healing SQL Agent monitoring and AAG failover runbooks. Before that: Zomato (300 restaurants, -Rs18 to +Rs2 per order) and Udaan (Rs5 Cr/month GMV in 3 months).
 
-## Core Stack
+## Links and credentials
 
-<p align="left">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/SQL%20%2F%20T--SQL-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white" alt="SQL and T-SQL" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
-  <img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" alt="Kafka" />
-  <img src="https://img.shields.io/badge/Apache%20Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" alt="Apache Spark" />
-  <img src="https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white" alt="Azure" />
-  <img src="assets/badges/pgvector.svg" alt="pgvector" />
-  <img src="assets/badges/rag.svg" alt="RAG" />
-  <img src="assets/badges/vectorless-rag.svg" alt="Vectorless RAG" />
-  <img src="assets/badges/mcp.svg" alt="MCP" />
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face" />
-  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
-  <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square" alt="MLflow" />
-  <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus" />
-  <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana" />
-  <img src="https://img.shields.io/badge/Azure%20DevOps-0078D7?style=flat-square&logo=azuredevops&logoColor=white" alt="Azure DevOps" />
-  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
-</p>
-
-## Earlier Foundation
-
-- Missouri S&T: built Azure AI anomaly detection pipelines, improved alert quality, migrated workloads to AKS with HPA, and published NLP research.
-- Zomato: built competitor analytics, search relevance, and internal search systems at production scale.
-
-## Credentials
-
+- [LinkedIn](https://linkedin.com/in/narendranathe) | [Portfolio](https://narendranathe.github.io) | [Substack](https://narendranathe.substack.com) | edara.narendranath@gmail.com
 - M.S. Information Science & Technology, Missouri S&T, 4.0 GPA
 - DP-700 Microsoft Certified Data Engineer
-- [Published researcher: Sentiment Analysis for Visitor Insights](https://doi.org/10.1080/10495142.2025.2525123)
-
-<p align="center">
-  <em>I build production AI systems, retrieval pipelines, and governed data platforms that make teams faster without making systems harder to trust.</em>
-</p>
+- [Published: Sentiment Analysis for Visitor Insights, Taylor & Francis](https://doi.org/10.1080/10495142.2025.2525123)
