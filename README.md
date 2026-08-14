@@ -1,6 +1,11 @@
 <h1 align="center">Narendranath Edara</h1>
 
 <p align="center">
+  <strong>I spent three years at Zomato and Udaan watching bad data cost real money.<br/>
+  Now I build payroll data pipelines at ExponentHR that fail loud and recover on their own: CDC in 8 minutes instead of 30, at a third of the compute.</strong>
+</p>
+
+<p align="center">
   <a href="https://narendranathe.github.io"><img src="https://img.shields.io/badge/Portfolio-Live%20Site-2D5A4A?style=flat-square" alt="Portfolio" /></a>
   <a href="https://linkedin.com/in/narendranathe"><img src="https://img.shields.io/badge/LinkedIn-Narendranath%20Edara-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://narendranathe.substack.com"><img src="https://img.shields.io/badge/Substack-Notes%20on%20AI%20Systems-FF6719?style=flat-square&logo=substack&logoColor=white" alt="Substack" /></a>
