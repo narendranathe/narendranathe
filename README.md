@@ -1,5 +1,4 @@
 <h1 align="center">Narendranath Edara</h1>
-
 <p align="center">
   <strong>I spent three years at Zomato and Udaan watching bad data cost real money.<br/>
   Now I build payroll data pipelines at ExponentHR upholding SLAs: CDC in 8 minutes instead of 30, at a third of the compute.</strong>
