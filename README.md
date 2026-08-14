@@ -8,55 +8,43 @@
   <a href="https://doi.org/10.1080/10495142.2025.2525123"><img src="https://img.shields.io/badge/Publication-Taylor%20%26%20Francis-8A2BE2?style=flat-square" alt="Publication" /></a>
 </p>
 
-**Builds:** the detection and recovery layer under payroll data pipelines: CDC, failover runbooks, self-healing SQL Agent monitoring.
-**Scale:** CDC 30 to 8 min with the freshness SLA held, 99.9% less data moved, releases 3 months to 14 days, failover MTTR under 1 hr.
-**Proof:** `pip install repo-context-hooks`, then check the Sigstore signature. 330+ tests, zero dependencies.
+**At a glance:** six years working with data, three of them engineering it, now building the detection and recovery layer under payroll pipelines at ExponentHR. CDC runs went from 30 minutes to 8 by moving only changed rows instead of full-table reloads (about 99.9% less data over a year), with compute down 67% and the freshness SLA held; the Python is public proof: a signed PyPI package with 330+ tests. Before engineering, the commercial side: Zomato (300 restaurants, -Rs18 to +Rs2 per order) and Udaan (Rs5 Cr/month GMV in 3 months).
 
----
-
-I spent 3 years in commercial ops learning what bad data costs. At Zomato that meant moving 300 restaurants from -Rs18 to +Rs2 per order. I kept waiting on data teams to answer basic questions, so I became one.
-
-Now I build data pipelines at ExponentHR, an HR and payroll vendor. CDC ETL runs went from 30 minutes to under 8 with the freshness SLA held, and compute dropped 67%.
+I spent three years in commercial ops learning what bad data costs before I became a data engineer. The habit that carried over is designing for recovery: self-healing SQL Agent monitoring, idempotent reruns (a failed run just runs again, no manual cleanup), and AAG failover runbooks with MTTR under one hour.
 
 ## The repos, ranked by what they prove
 
-**[repo-context-hooks](https://github.com/narendranathe/repo-context-hooks): zero-dependency git hooks that hand an LLM agent the repo's current state at session start.**
-Mechanism: Pre- and post-commit hooks serialize branch, staged diff, recent commits, and project layout into a markdown file checked into the repo, so the next agent session reads one file instead of re-walking the tree.
-Tradeoff: Checked-in markdown and a standard-library-only runtime over a daemon or hosted state store, because the tool installs into any repo with zero footprint and the snapshot is versioned and diffable in git itself. Rejected an embeddings index: for a file this size, a full read beats a vector store plus a build step.
-Impact: 330+ passing tests at v1.0, zero runtime dependencies, Sigstore-signed PyPI releases a reviewer can verify without asking me.
+**[repo-context-hooks](https://github.com/narendranathe/repo-context-hooks): gives a coding agent memory of your repo between sessions.**
+**How it works.** Each commit fires hooks that write the branch, staged diff, recent history, and project layout into a markdown file checked into the repo, so the next session reads one file and starts work with full context.
+**Why this design.** Checked-in markdown and a standard-library-only runtime, because the repo is the one thing guaranteed to exist when the next session starts. An embeddings index would add a build step and a dependency to solve a lookup one file already handles.
+**The result.** 330+ tests, zero runtime dependencies, Sigstore-signed releases on PyPI: `pip install repo-context-hooks` and check the signature.
 
-**[FinTune](https://github.com/narendranathe/fintune): Mistral-7B fine-tuned for financial sentiment, served behind guardrails with self-recovery.**
-Mechanism: LoRA adapters train on top of a frozen 4-bit NF4 base (quantized: weights stored at 4-bit precision to cut memory), so only the adapter weights update. At serve time each request passes a PII redactor before inference, KL divergence between recent and reference output feeds the drift monitor, and a three-state breaker picks the recovery: reload the model, shed batch size, or drop to a smaller quantized checkpoint.
-Tradeoff: QLoRA adapters over full fine-tuning, so training fits on one GPU. Full-parameter tuning multiplies VRAM cost for a gain this dataset cannot show.
-Impact: 35+ tests across five layers: data, model, guardrails, serving, and recovery.
+**[FinTune](https://github.com/narendranathe/fintune): a Mistral-7B fine-tune with production serving: guardrails, drift watch, self-recovery.**
+**How it works.** Training is QLoRA: the base model stays frozen at 4-bit precision and only small adapter matrices learn, so the fine-tune fits on one GPU. Serving adds a PII redactor before inference, a drift monitor scoring KL divergence (a distance score between recent and reference output), and a three-state circuit breaker that reloads the model, sheds batch size, or shifts to a smaller checkpoint.
+**Why this design.** Adapters over full fine-tuning: at this dataset size, adapters reach the same quality at a fraction of the VRAM.
+**The result.** 35+ tests across five layers: data, model, guardrails, serving, and recovery.
 
-**[Fraud Detection](https://github.com/narendranathe/fraud-detection-ml-platform): Kafka to LightGBM scoring with exactly-once processing and full serving metrics.**
-Mechanism: Consumers commit Kafka offsets only after the score write succeeds, so a crash mid-batch replays instead of double-counting; that is the exactly-once part. LightGBM serves the score, MLflow versions the model, and Prometheus records latency histograms that Grafana renders.
-Tradeoff: Gradient-boosted trees over a neural net, because the features are tabular and trees train in minutes and score in microseconds. A neural net would blow the single-digit-millisecond P99 budget for no measured gain on this data.
-Impact: P99 of 1.12 ms at 100+ TPS sustained. Training data is synthetic, 100K generated transactions at about 2% fraud, and the repo README says so up front.
+**[Fraud Detection](https://github.com/narendranathe/fraud-detection-ml-platform): a Kafka pipeline that scores transactions in about a millisecond.**
+**How it works.** Consumers commit Kafka offsets only after each score is written, so a crash mid-batch replays cleanly and every transaction scores exactly once. LightGBM serves the score, MLflow versions the model, Prometheus and Grafana watch the serving path.
+**Why this design.** LightGBM over a neural net: the features are tabular, and trees match that accuracy while training in minutes and scoring in microseconds.
+**The result.** P99 of 1.12 ms at 100+ TPS sustained. Training data is synthetic by design (100K generated transactions, about 2% fraud), stated up front in the README.
 
-**[AutoApply AI](https://github.com/narendranathe/autoapply-ai): document-intelligence backend that reads job posts and writes grounded answers.**
-Mechanism: Each generation request walks a six-provider LLM cascade with per-provider fallback. pgvector, inside the same Postgres that holds the records, retrieves prior work history to ground the answer, and a Chrome MV3 extension drives 11 ATS adapters that pierce shadow DOM and queue submissions when offline.
-Tradeoff: A provider cascade over a single API, because one provider's rate limit or outage halts a batch run mid-form. pgvector over a standalone vector database, because Postgres was already the system of record: one less service to deploy and back up.
-Impact: 355 backend tests over 40+ endpoints. Private deployment; public release waits on tracked security fixes.
+**[AutoApply AI](https://github.com/narendranathe/autoapply-ai): document intelligence that reads job posts and writes grounded answers.**
+**How it works.** Each generation request walks a six-provider LLM cascade with per-provider fallback, pgvector inside the same Postgres retrieves prior work history to ground the answer, and a Chrome MV3 extension drives 11 ATS adapters through shadow DOM with offline queuing.
+**Why this design.** The cascade keeps runs moving through any provider's rate limit or outage, and pgvector keeps Postgres as the only datastore to deploy and back up.
+**The result.** 355 backend tests over 40+ endpoints. Private deployment today; the README lists the security fixes scheduled before a public release.
 
-**[JobScout](https://github.com/narendranathe/job-scout): 109 career pages scraped on a schedule, built so one broken source cannot kill the run.**
-Mechanism: Each source sits behind its own circuit breaker; after repeated failures the breaker opens, that scraper is skipped, and the run continues. Results land in SQLite in WAL mode (write-ahead log: readers never block the writer), TF-IDF scores new postings against 95+ resume variants, and matches above threshold push to Discord and Telegram.
-Tradeoff: SQLite WAL over Postgres, because the dataset fits in one file and WAL gives concurrent reads with no server to run. Rejected any hosted database because the whole design runs free on GitHub Actions minutes.
-Impact: 109 sources monitored at zero monthly cost, where a dead scraper now costs one source instead of the run.
+**[JobScout](https://github.com/narendranathe/job-scout): 109 career pages on a schedule, each source isolated so every sweep finishes.**
+**How it works.** Each scraper sits behind its own circuit breaker: after repeated failures the breaker opens, that source gets skipped, and the sweep completes. Results land in SQLite in WAL mode (write-ahead log, so reads never block writes), TF-IDF scores new postings against 95+ resume variants, and matches push to Discord and Telegram.
+**Why this design.** SQLite WAL over Postgres: the whole dataset stays one file, reads run concurrently with writes, and the design lives free on GitHub Actions minutes.
+**The result.** 109 sources at zero dollars a month, where one broken scraper costs one source and the other 108 still deliver.
 
-**[tailor-resume](https://github.com/narendranathe/tailor-resume): parses a resume and a job post, then rewrites bullets to fit a measured page budget.**
-Mechanism: After parsing and matching, the rewriter checks each bullet against a character budget calibrated from compiled PDF output, so length is enforced against rendered lines, not token counts.
-Tradeoff: Deterministic budgets over asking the model to "keep it short", because token counts do not predict rendered lines. A budget fails loudly at write time instead of overflowing the PDF silently.
-Impact: 190 tests across parse, match, and render. Supporting tool for the resume system, positioned that way on purpose.
+**[tailor-resume](https://github.com/narendranathe/tailor-resume): rewrites resume bullets to fit a measured page budget.**
+**How it works.** After parsing the resume and the job post, the rewriter checks every bullet against a character budget calibrated from compiled PDF output, so length is enforced against rendered lines.
+**Why this design.** Deterministic budgets over asking the model to keep it short: tokens do not map to rendered lines, and a budget catches overflow at write time, when the fix is cheap.
+**The result.** 190 tests across parse, match, and render, supporting the resume system behind the tailored PDFs.
 
 ---
-
-## Day job and before
-
-Data engineer at ExponentHR, an HR and payroll vendor. CDC ETL from 30 minutes to under 8 with the freshness SLA held, compute down 67%. Deployment cycle from 3 months to 14 days. Self-healing SQL Agent monitoring, and AAG failover runbooks with MTTR under 1 hr.
-
-Zomato: 300 restaurants, -Rs18 to +Rs2 per order. Udaan: Rs5 Cr/month GMV in 3 months.
 
 ## Tools, each with a repo above as proof
 
@@ -82,4 +70,4 @@ Zomato: 300 restaurants, -Rs18 to +Rs2 per order. Udaan: Rs5 Cr/month GMV in 3 m
 
 - M.S. Information Science and Technology, Missouri S&T, 4.0 GPA
 - DP-700: Microsoft Certified Fabric Data Engineer Associate
-- [Publication, Taylor & Francis](https://doi.org/10.1080/10495142.2025.2525123)
+- [An Examination of Sentiment Analysis as a Tool for Gathering Visitor Insights from Online Review Sites for a Museum](https://doi.org/10.1080/10495142.2025.2525123), *Journal of Nonprofit and Public Sector Marketing*, Taylor & Francis, 2025, with D. Bojanic and J. Zhang
