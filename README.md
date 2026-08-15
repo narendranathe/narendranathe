@@ -8,7 +8,7 @@
   <a href="https://doi.org/10.1080/10495142.2025.2525123"><img src="https://img.shields.io/badge/Publication-Taylor%20%26%20Francis-8A2BE2?style=flat-square" alt="Publication" /></a>
 </p>
 
-**At a glance:** six years working with data, three of them engineering it, now building the detection and recovery layer under payroll pipelines at ExponentHR. CDC runs went from 30 minutes to 8 by moving only changed rows instead of full-table reloads (about 99.9% less data over a year), with compute down 67% and the freshness SLA held; the Python is public proof: a signed PyPI package with 330+ tests. Before engineering, I was with Zomato as a Business Analyst(300 restaurants, -Rs18 to +Rs2 per order) and Udaan (Rs5 Cr/month GMV in 3 months).
+**At a glance:** six years working with data, now building the detection and recovery layer under payroll pipelines at ExponentHR. CDC runs went from 30 minutes to 8 by moving only changed rows instead of full-table reloads (about 99.9% less data over a year), with compute down 67% and the freshness SLA held; the Python is public proof: a signed PyPI package with 330+ tests. Before engineering, I was with Zomato as a Business Analyst(300 restaurants, -Rs18 to +Rs2 per order) and Udaan (Rs5 Cr/month GMV in 3 months).
 
 I spent three years in commercial ops learning what bad data costs before I became a data engineer. The habit that carried over is designing for recovery: self-healing SQL Agent monitoring, idempotent reruns (a failed run just runs again, no manual cleanup), and AAG failover runbooks with MTTR under one hour.
 
