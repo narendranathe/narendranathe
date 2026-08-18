@@ -4,11 +4,11 @@ Six years in data, three on platforms. CDC runtime down 67%. repo-context-hooks 
 
 ## Before you browse
 
-Start with repo-context-hooks to see how I write and ship Python: 330+ tests, Sigstore-signed releases at [pypi.org/project/repo-context-hooks](https://pypi.org/project/repo-context-hooks). One repo runs on synthetic data, fraud-detection, so judge the pipeline design and not the 2% fraud rate.
+Start with repo-context-hooks to see how I ship Python: 330+ tests, Sigstore-signed, at [pypi.org/project/repo-context-hooks](https://pypi.org/project/repo-context-hooks). fraud-detection runs on synthetic data, so judge the pipeline design and not the 2% fraud rate.
 
-Three years in commercial ops taught me what bad data costs, so I design for recovery: MTTR under an hour.
+Three years in commercial ops taught me what bad data costs. I design for recovery: MTTR under an hour.
 
-I run CI/CD through Azure DevOps: the cycle went from 3 months to 14 days. That covers SSRS, Power BI, and the automated release steps.
+I run CI/CD through Azure DevOps: the cycle went from 3 months to 14 days. That covers 2 data pipeline jobs and 5 deployment pipelines, including the database copydown tool.
 
 ## Currently building
 
@@ -26,6 +26,10 @@ I run CI/CD through Azure DevOps: the cycle went from 3 months to 14 days. That 
 ## Before engineering
 
 At Zomato I worked unit economics across 300 restaurants, where per-order contribution moved from -Rs18 to +Rs2. At udaan I built the BI tracking Rs5 Cr monthly GMV in three months.
+
+## What I write down
+
+Design docs for two attestation systems, PaySchedule and PayHoliday, plus business continuity runbooks and Azure visibility dashboards. New hires read my docs on code spaces, git branch strategy, and work item resolution instead of asking me.
 
 ## Credentials and contact
 
