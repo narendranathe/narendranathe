@@ -15,7 +15,7 @@ Start with repo-context-hooks if you want to see how I write and ship Python. On
 - **[repo-context-hooks](https://github.com/narendranathe/repo-context-hooks)**: agent memory in a checked-in markdown file. 330+ tests, zero dependencies, signed.
 - **[autoapply-ai](https://github.com/narendranathe/autoapply-ai)**: 11 ATS adapters behind 40+ endpoints. 355 tests, private deployment.
 - **[tailor-resume](https://github.com/narendranathe/tailor-resume)**: resume bullets rewritten against a PDF-calibrated character budget. 190 tests, on PyPI.
-- **[job-scout](https://github.com/narendranathe/job-scout)**: 109 career pages, each scraper behind a circuit breaker. One break costs 1 source.
+- **[job-scout](https://github.com/narendranathe/job-scout)**: 109 career pages behind per-scraper circuit breakers. One break costs 1 source.
 - **[fraud-detection-ml-platform](https://github.com/narendranathe/fraud-detection-ml-platform)**: Kafka scoring over 100K synthetic transactions. P99 1.12ms at 100+ TPS.
 - **[FinTune](https://github.com/narendranathe/fintune)**: Mistral-7B QLoRA, PII redaction, drift monitoring. 35+ tests across five layers.
 
