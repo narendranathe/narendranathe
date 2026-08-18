@@ -12,7 +12,7 @@ I run CI/CD through Azure DevOps: the cycle went from 3 months to 14 days. That 
 
 ## Currently building
 
-- I own the Payroll CDC end to end: idempotent data pipelines, self-healing mechanisms for accuracy and reliability.
+- I own Payroll CDC end to end: a failed load reruns itself, no manual cleanup.
 
 ## The repos, ranked by what they prove
 
