@@ -1,6 +1,6 @@
 # Narendranath Edara
 
-Six years in data, three on platforms. CDC runtime down 67%. repo-context-hooks ships on PyPI.
+Six years in data. CDC runtime down 67%. repo-context-hooks ships on PyPI.
 
 ## Before you browse
 
