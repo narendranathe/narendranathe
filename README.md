@@ -16,11 +16,11 @@ Three years in commercial ops taught me what bad data costs, so I design for rec
 
 The green squares are real: payroll CDC, PyPI releases, and the repos below.
 
-- **[repo-context-hooks](https://github.com/narendranathe/repo-context-hooks)**: agent memory in a checked-in markdown file. 330+ tests, signed.
-- **[autoapply-ai](https://github.com/narendranathe/autoapply-ai)**: 11 ATS adapters, 40+ endpoints, 355 tests. Private deployment.
-- **[tailor-resume](https://github.com/narendranathe/tailor-resume)**: resume bullets rewritten against a PDF-calibrated budget. 190 tests, on PyPI.
+- **[repo-context-hooks](https://github.com/narendranathe/repo-context-hooks)**: agent memory in a checked-in file. 330+ tests, signed.
+- **[autoapply-ai](https://github.com/narendranathe/autoapply-ai)**: 11 ATS adapters, 40+ endpoints, 355 tests, private.
+- **[tailor-resume](https://github.com/narendranathe/tailor-resume)**: bullets rewritten against a PDF-calibrated budget. 190 tests, PyPI.
 - **[job-scout](https://github.com/narendranathe/job-scout)**: 109 career pages, per-scraper circuit breakers. One break costs 1 source.
-- **[fraud-detection-ml-platform](https://github.com/narendranathe/fraud-detection-ml-platform)**: Kafka scoring over 100K synthetic transactions. P99 1.12ms at 100+ TPS.
+- **[fraud-detection-ml-platform](https://github.com/narendranathe/fraud-detection-ml-platform)**: Kafka scoring over 100K synthetic transactions. P99 1.12ms, 100+ TPS.
 - **[FinTune](https://github.com/narendranathe/fintune)**: Mistral-7B QLoRA, PII redaction, drift monitoring. 35+ tests.
 
 ## Before engineering
