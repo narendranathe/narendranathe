@@ -4,7 +4,7 @@ Six years in data, three on platforms. CDC runtime down 67%. repo-context-hooks 
 
 ## Before you browse
 
-Start with repo-context-hooks if you want to see how I write and ship Python: 330+ tests, Sigstore-signed releases at [pypi.org/project/repo-context-hooks](https://pypi.org/project/repo-context-hooks). One repo runs on synthetic data, fraud-detection, so judge the pipeline design and not the 2% fraud rate.
+Start with repo-context-hooks to see how I write and ship Python: 330+ tests, Sigstore-signed releases at [pypi.org/project/repo-context-hooks](https://pypi.org/project/repo-context-hooks). One repo runs on synthetic data, fraud-detection, so judge the pipeline design and not the 2% fraud rate.
 
 Three years in commercial ops taught me what bad data costs, so I design for recovery: MTTR under an hour.
 
