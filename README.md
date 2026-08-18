@@ -8,8 +8,7 @@ Start with repo-context-hooks if you want to see how I write and ship Python. On
 
 ## Currently building
 
-- Payroll CDC pipelines at ExponentHR: 30-minute runs now finish in 8.
-- Maintaining repo-context-hooks on PyPI: 330+ tests, Sigstore-signed releases.
+- Building the detection and recovery layer under ExponentHR payroll CDC.
 
 ## The repos
 
