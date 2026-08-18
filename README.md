@@ -8,9 +8,11 @@ Start with repo-context-hooks if you want to see how I write and ship Python: 33
 
 Three years in commercial ops taught me what bad data costs, so I design for recovery: idempotent reruns and AAG failover runbooks with MTTR under an hour.
 
+I run CI/CD through Azure DevOps: the cycle went from 3 months to 14 days. That covers SSRS, Power BI, and the automated release steps.
+
 ## Currently building
 
-- Building the detection and recovery layer under ExponentHR payroll CDC.
+- I own the Payroll CDC end to end: idempotent data pipelines, self-healing mechanisms for accuracy and reliability.
 
 ## The repos, ranked by what they prove
 
