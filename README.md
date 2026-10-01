@@ -1,6 +1,6 @@
 # Narendranath Edara
 
-Six years in data. CDC runtime down 67%. repo-context-hooks ships on PyPI.
+Six years in data. CDC refresh cut from 30 minutes to under 8. repo-context-hooks ships on PyPI.
 
 **[Resume (PDF)](https://narendranathe.github.io/static/resume.pdf)**
 
