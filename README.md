@@ -2,6 +2,8 @@
 
 Six years in data. CDC runtime down 67%. repo-context-hooks ships on PyPI.
 
+**[Resume (PDF)](https://narendranathe.github.io/static/resume.pdf)**
+
 ## Before you browse
 
 Start with repo-context-hooks to see how I ship Python: 330+ tests, Sigstore-signed, at [pypi.org/project/repo-context-hooks](https://pypi.org/project/repo-context-hooks). fraud-detection runs on synthetic data, so judge the pipeline design and not the 2% fraud rate.
